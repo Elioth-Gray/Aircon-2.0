@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { List } from "@phosphor-icons/react";
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative w-full bg-[#EEEDE9] mt-4 ">
+      <nav className="relative w-full bg-[#EEEDE9] mt-8 ">
         {" "}
         {/* Navbar background with margin-top */}
         <div className="mx-auto px-10 sm:px-6 lg:px-8">
@@ -25,7 +26,7 @@ const Navbar = () => {
                 <Image
                   src="/logo-1.png" // Path gambar logo relatif dari folder public
                   alt="logo"
-                  width={120} // Lebar gambar logo lebih kecil
+                  width={150} // Lebar gambar logo lebih kecil
                   height={43} // Tinggi gambar logo lebih kecil
                   className="object-contain" // Menjaga proporsi gambar
                 />
@@ -79,20 +80,14 @@ const Navbar = () => {
             {/* Navbar Toggler (Hamburger Menu) */}
             <div className="lg:hidden flex items-center ml-auto">
               <button
-                className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="flex-col items-center justify-center p-1 py-3 rounded-lg text-black bg-white border border-black"
                 onClick={toggleNavbar}
                 style={{
                   width: "50px", // Lebar toggle lebih kecil
                   zIndex: 10, // Agar toggle berada di atas elemen lainnya
                 }}
               >
-                <Image
-                  src="/Toggle.png" // Path gambar Toggle yang disediakan
-                  alt="toggle-icon"
-                  width={40} // Lebar gambar toggle lebih kecil
-                  height={40} // Tinggi gambar toggle lebih kecil
-                  className="w-full h-full" // Menyesuaikan ukuran gambar dengan container
-                />
+                <List className="text-black w-full" size={20}/>
               </button>
             </div>
             {/* Register Button */}
