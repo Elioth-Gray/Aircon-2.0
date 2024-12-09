@@ -41,7 +41,7 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="/"
+                href="/about-us"
                 className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
               >
                 About Us
@@ -87,7 +87,7 @@ const Navbar = () => {
                   zIndex: 10, // Agar toggle berada di atas elemen lainnya
                 }}
               >
-                <List className="text-black w-full" size={20}/>
+                <List className="text-black w-full" size={20} />
               </button>
             </div>
             {/* Register Button */}
@@ -112,14 +112,14 @@ const Navbar = () => {
               </a>{" "}
               {/* Menambahkan padding kiri */}
               <a
-                href="/"
+                href="/about-us"
                 className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
               >
                 About Us
               </a>{" "}
               {/* Menambahkan padding kiri */}
               <a
-                href="/"
+                href="/competition"
                 className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
               >
                 Competition

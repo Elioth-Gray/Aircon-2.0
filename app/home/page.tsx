@@ -1,5 +1,5 @@
-import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
+import Cards from "../components/Cards";
 
 const Home = () => {
   return (
@@ -11,11 +11,13 @@ const Home = () => {
             title="ABOUT US"
             description="What is Airlangga Convention 2.0?"
             image="/about-us.svg"
+            href="/about-us"
           />
           <Cards
-            title="ABOUT US"
+            title="PERFORMANCE"
             description="What is Airlangga Convention 2.0?"
             image="/about-us.svg"
+            href="/performance"
           />
         </div>
         <div>
@@ -23,6 +25,7 @@ const Home = () => {
             title="COMPETITION"
             description="We provide a platform for high school students to explore interests and talents in both academic and non-academic competitions."
             image="/competition.svg"
+            href="/competition"
           />
         </div>
       </div>
