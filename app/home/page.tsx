@@ -1,5 +1,7 @@
+import React from "react";
 import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -26,6 +28,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
