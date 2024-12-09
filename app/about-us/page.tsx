@@ -36,6 +36,7 @@ const AboutUs = () => {
           <Image src="/Photo2.jpg" width={145} height={145} alt="Photo2" className="rounded-lg"></Image>
         </div>
       </div>
+
     </>
   );
 };
