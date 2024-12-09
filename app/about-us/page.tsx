@@ -1,4 +1,3 @@
-"use client";
 import Navbar from "../components/Navbar";
 import BackButton from "../components/BackButton";
 import Image from "next/image";
