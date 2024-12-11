@@ -36,7 +36,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-
     </>
   );
 };
