@@ -7,7 +7,6 @@ import {Newspaper} from "@phosphor-icons/react/dist/ssr";
 const Competition = () => {
   return (
     <>
-      <Navbar />
       <div className="px-10 mt-5">
         <BackButton></BackButton>
         <div className="w-full mt-5">

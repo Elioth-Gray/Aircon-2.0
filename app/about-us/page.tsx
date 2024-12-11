@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 const AboutUs = () => {
   return (
     <>
-      <Navbar />
       <div className="px-10 mt-5">
         <BackButton></BackButton>
         <div className="w-full mt-5">
@@ -36,7 +35,7 @@ const AboutUs = () => {
           <Image src="/Photo2.jpg" width={145} height={145} alt="Photo2" className="rounded-lg"></Image>
         </div>
       </div>
-      <Footer/>
+
 
     </>
   );
