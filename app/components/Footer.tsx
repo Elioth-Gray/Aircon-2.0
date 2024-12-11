@@ -17,7 +17,7 @@ const Footer = () => {
           width={150} // Tentukan lebar gambar
           height={43} // Tentukan tinggi gambar // Menambah margin bawah logo agar tidak terlalu rapat
         />
-        <div className="flex flex-row gap-4 items-center justify-between w-full mb-11">
+        <div className="flex flex-row gap-4 items-center justify-between w-full mb-11 mt-5">
           {/* About Us Section */}
           <div>
             <h2 className="font-bold mb-3">About Us</h2>{" "}
@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="border-t border-white w-full mt-6"></div>{" "}
         {/* Jarak lebih kecil antara divider dan konten */}
         {/* Copyright / Footer Text */}
-        <p className="mt-4 text-center">&copy;Aircon2.0</p>{" "}
+        <p className="mt-4 text-center">&copy; Aircon2.0</p>{" "}
         {/* Jarak yang lebih besar antara divider dan teks */}
       </div>
     </footer>
