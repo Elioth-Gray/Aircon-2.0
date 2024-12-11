@@ -51,7 +51,6 @@ const AboutUs = () => {
           ></Image>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
