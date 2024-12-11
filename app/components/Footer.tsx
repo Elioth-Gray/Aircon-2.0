@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa"; // Gunakan react-icons
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white p-8 mt-8">
+    <footer className="bg-black text-white p-8 mt-8 h-screen">
       {/* Padding footer */}
       <div className="flex flex-col justify center items-start">
         {/* Menambah space-y untuk memberi jarak antar elemen */}
