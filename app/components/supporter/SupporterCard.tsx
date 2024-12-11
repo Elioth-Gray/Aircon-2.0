@@ -1,0 +1,46 @@
+import React from 'react'
+
+const SupporterCard = ({ school1, school2, gender, date, location } : {school1: String, school2:String, gender:String, date: String, location: String}) => {
+    return (
+      <div className="bg-white border border-orange-300 rounded-lg p-6 max-w-md mx-auto shadow-md mt-8 relative">
+        <h1 className="text-md font-bold text-blue-900 mb-2 text-center inter-extra-bold">
+          {school1.toUpperCase()}
+        </h1>
+        <div className="flex items-center mb-2 relative">
+          <div className="flex-1 border-t border-gray-300"></div>
+          <div className="absolute left-0 transform -translate-x-1/2 bg-blue-900 text-[#D4ECF8] rounded-full w-12 h-12 flex items-center justify-center text-xs -top-6 ml-4 inter-bold">
+            {gender}
+          </div>
+          <div className="absolute right-0 transform translate-x-1/2 bg-blue-900 text-[#D4ECF8] rounded-full w-12 h-12 flex items-center justify-center text-xs -top-6 mr-4">
+            VS
+          </div>
+        </div>
+        <h1 className="text-md font-bold text-blue-900 mb-6 text-center inter-extra-bold">
+          {school2.toUpperCase()}
+        </h1>
+        <div className="flex items-center mb-4">
+          <img
+            src="/cal.svg"
+            alt="Calendar Icon"
+            className="w-4 h-4 mr-2 opacity-50"
+          />
+          <span className="text-xs opacity-50">{date}</span>
+        </div>
+        <div className="flex items-center mb-4">
+          <img
+            src="/gps.svg"
+            alt="GPS Icon"
+            className="w-4 h-4 mr-2 opacity-50"
+          />
+          <span className="text-xs opacity-50">{location}</span>
+        </div>
+        <div className="flex items-center justify-end mt-4">
+          <button className="bg-orange-500 text-white px-3 py-1 rounded-lg shadow-md font-extrabold text-xs">
+            Buy Ticket
+          </button>
+        </div>
+      </div>
+    );
+  };
+  
+  export default SupporterCard;
