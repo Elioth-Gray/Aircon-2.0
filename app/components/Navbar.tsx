@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative w-full bg-[#EEEDE9] mt-8 ">
+      <nav className="relative w-full bg-[#EEEDE9] mt-10 mb-5 ">
         {" "}
         {/* Navbar background with margin-top */}
         <div className="mx-auto px-10 sm:px-6 lg:px-8">
@@ -100,7 +100,7 @@ const Navbar = () => {
         </div>
         {/* Navbar Links on Mobile */}
         {isClick && (
-          <div className=" lg:hidden bg-white absolute w-full">
+          <div className=" lg:hidden bg-white absolute w-full mt-3">
             <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white rounded-lg flex flex-col gap-3">
               {" "}
               {/* Menambahkan padding untuk membuat jarak lebih besar */}
