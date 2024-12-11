@@ -41,13 +41,13 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="/"
+                href="/about-us"
                 className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
               >
                 About Us
               </a>
               <a
-                href="/"
+                href="/competitions"
                 className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
               >
                 Competition
@@ -112,14 +112,14 @@ const Navbar = () => {
               </a>{" "}
               {/* Menambahkan padding kiri */}
               <a
-                href="/"
+                href="/about-us"
                 className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
               >
                 About Us
               </a>{" "}
               {/* Menambahkan padding kiri */}
               <a
-                href="/"
+                href="/competitions"
                 className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
               >
                 Competition
