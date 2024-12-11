@@ -14,7 +14,7 @@ export default {
       },
       // screens: {
       //   'custom-lg': '1098px', // Custom breakpoint at 1098px
-      // },
+      // }, 
     },
   },
   plugins: [],

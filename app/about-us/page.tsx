@@ -1,7 +1,7 @@
-"use client";
 import Navbar from "../components/Navbar";
 import BackButton from "../components/BackButton";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 const AboutUs = () => {
   return (
@@ -36,6 +36,7 @@ const AboutUs = () => {
           <Image src="/Photo2.jpg" width={145} height={145} alt="Photo2" className="rounded-lg"></Image>
         </div>
       </div>
+      <Footer/>
 
     </>
   );
