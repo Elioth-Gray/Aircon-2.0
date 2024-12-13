@@ -50,7 +50,7 @@ const Competition = () => {
           <p className=" uppercase font-bold">Interactive</p>
           <p className=" uppercase font-bold">Competitions</p>
         </div>
-        <div className="w-full mt-5 flex flex-col gap-3 lg:flex-wrap lg:flex-row lg:justify-between">
+        <div className="w-full mt-5 grid grid-cols-1 gap-5 lg:grid-cols-3">
         {competitionData.map((competition, index) => (
         <CompetitionCard
           key={index}

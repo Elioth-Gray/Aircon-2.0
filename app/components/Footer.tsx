@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white p-8 mt-12 h-screen">
+    <footer className="bg-black text-white p-8 mt-12">
       {/* Padding footer */}
       <div className="flex flex-col justify center items-start lg:flex-row lg:items-center lg:hidden">
         {/* Menambah space-y untuk memberi jarak antar elemen */}
