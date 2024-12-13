@@ -15,7 +15,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative w-full bg-[#EEEDE9] mt-10 mb-5">
+      <nav
+        className={` ${
+          isClick ? "fixed z-20 top-0 left-0" : "relative"
+        } w-full bg-[#EEEDE9] pt-10 pb-5`}
+      >
         {" "}
         {/* Navbar background with margin-top */}
         <div className="mx-auto px-10 sm:px-6 lg:mx-28 lg:px-0">
@@ -96,7 +100,7 @@ const Navbar = () => {
             </div>
 
             {/* Navbar Toggler (Hamburger Menu) */}
-            <div className="lg:hidden flex items-center ml-auto">
+            <div className="lg:hidden flex items-center ml-auto ">
               <button
                 className="flex-col items-center justify-center p-1 py-3 rounded-lg text-black bg-white border border-black"
                 onClick={toggleNavbar}
@@ -121,7 +125,7 @@ const Navbar = () => {
         </div>
         {/* Navbar Links on Mobile */}
         {isClick && (
-          <div className=" lg:hidden bg-white absolute w-full mt-3 z-50">
+          <div className=" lg:hidden bg-white  w-full mt-3 z-50 h-screen fixed left-0">
             <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white rounded-lg flex flex-col gap-3">
               {" "}
               {/* Menambahkan padding untuk membuat jarak lebih besar */}
