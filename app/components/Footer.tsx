@@ -3,12 +3,13 @@
 import React from "react";
 import Image from "next/image"; // Gunakan Next.js Image component
 import { FaInstagram } from "react-icons/fa"; // Gunakan react-icons
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white p-8 mt-8 h-screen">
       {/* Padding footer */}
-      <div className="flex flex-col justify center items-start">
+      <div className="flex flex-col justify center items-start lg:flex-row lg:items-center lg:hidden">
         {/* Menambah space-y untuk memberi jarak antar elemen */}
         {/* Gunakan Image dari Next.js */}
         <Image
@@ -17,7 +18,7 @@ const Footer = () => {
           width={150} // Tentukan lebar gambar
           height={43} // Tentukan tinggi gambar // Menambah margin bawah logo agar tidak terlalu rapat
         />
-        <div className="flex flex-row gap-4 items-center justify-between w-full mb-11 mt-5">
+        <div className="flex flex-row gap-4 items-start justify-between w-full mb-11 mt-5">
           {/* About Us Section */}
           <div>
             <h2 className="font-bold mb-3">About Us</h2>{" "}
@@ -34,7 +35,7 @@ const Footer = () => {
           </div>
 
           {/* Competition Section */}
-          <div>
+          <div className="">
             <h2 className="font-bold mb-3">Competition</h2>{" "}
             {/* Menambah margin bawah pada judul */}
             <ul className="space-y-2">
@@ -64,6 +65,54 @@ const Footer = () => {
         {/* Copyright / Footer Text */}
         <p className="mt-4 text-center">&copy; Aircon2.0</p>{" "}
         {/* Jarak yang lebih besar antara divider dan teks */}
+      </div>
+      <div className="hidden lg:block w-full gap-3 mt-8">
+        <div className="flex flex-row justify-center items-start gap-20">
+        <div className="">
+          <Image src="/logo-1.png" width={200} height={200} alt="logo"></Image>
+        </div>
+        <div className="flex flex-col">
+          <div className="flex flex-row justify-start item-start gap-16">
+            <div className="text-xl">
+              <h1 className="text-xl mb-2 font-bold">About Us</h1>
+              <Link href="/about-us">Airlangga Convention 2.0</Link>
+            </div>
+            <div className="text-xl">
+              <h1 className="text-xl mb-2 font-bold">Competition</h1>
+              <div className="w-full flex flex-col justify-start items-start gap-3">
+                <Link href="/about-us">Karya Tulis Ilmiah</Link>
+                <Link href="/about-us">Infografis</Link>  
+                <Link href="/about-us">Try Out</Link>  
+                <Link href="/about-us">Business Plan</Link>
+                <Link href="/about-us">Basket</Link>        
+              </div>
+            </div>
+            <div className="text-xl">
+              <h1 className="text-xl mb-2 font-bold">Others</h1>
+              <div className="w-full flex flex-col justify-start items-start gap-3">
+                <Link href="/about-us">Opening Party</Link>
+                <Link href="/about-us">Closing Party</Link>  
+                <Link href="/about-us">Supporter</Link>  
+                <Link href="/about-us">Tenant</Link>
+                <Link href="/about-us">Performance</Link>
+                <Link href="/about-us">Sponsor & Media Partner</Link>          
+              </div>
+            </div>
+            <div className="text-xl">
+              <h1 className="text-xl mb-2 font-bold">Competition</h1>
+              <div className="w-full flex flex-col justify-start items-start gap-3">
+                <Link href="/about-us">Karya Tulis Ilmiah</Link>
+                <Link href="/about-us">Infografis</Link>  
+                <Link href="/about-us">Try Out</Link>  
+                <Link href="/about-us">Business Plan</Link>
+                <Link href="/about-us">Basket</Link>        
+              </div>
+            </div>
+          </div>
+          <div className="w-full bg-white py-[0.015rem] mt-20"></div>
+          <p className="mt-4 text-start">&copy; Aircon2.0</p>{" "}
+        </div>
+        </div>
       </div>
     </footer>
   );
