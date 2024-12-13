@@ -3,6 +3,11 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
 
+@font-face {
+  font-family: "WinterTrendy";
+  src: url("/fonts/Winter-Trendy.ttf") format("truetype");
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #eeede9;
@@ -23,4 +28,8 @@ body {
 
 .navbar-mobile {
   background: tomato;
+}
+
+.font-winter {
+  font-family: "WinterTrendy", sans-serif;
 }

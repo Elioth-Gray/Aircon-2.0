@@ -121,7 +121,7 @@ const Navbar = () => {
         </div>
         {/* Navbar Links on Mobile */}
         {isClick && (
-          <div className=" lg:hidden bg-white absolute w-full mt-3">
+          <div className=" lg:hidden bg-white absolute w-full mt-3 z-50">
             <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white rounded-lg flex flex-col gap-3">
               {" "}
               {/* Menambahkan padding untuk membuat jarak lebih besar */}
