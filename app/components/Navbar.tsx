@@ -4,6 +4,7 @@ import Image from "next/image";
 import { List } from "@phosphor-icons/react";
 import ReadMoreButton from "./ReadMoreButton";
 import { ArrowUpRight } from "@phosphor-icons/react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
       <nav className="relative w-full bg-[#EEEDE9] mt-10 mb-5">
         {" "}
         {/* Navbar background with margin-top */}
-        <div className="mx-auto px-10 sm:px-6 lg:px-20">
+        <div className="mx-auto px-10 sm:px-6 lg:mx-28 lg:px-0">
           <div className="flex flex-row items-center justify-between w-full">
             {/* Logo di sebelah kiri */}
             <div className="flex-shrink-0 flex items-center py-2">
@@ -42,50 +43,58 @@ const Navbar = () => {
               </a>
             </div>
             {/* Navbar Links on Desktop */}
-            <div className="hidden lg:flex flex--row justify-center items-center space-x-4">
-              <a
-                href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
+            <div className="hidden lg:flex flex-row justify-center items-center gap-14 transition-all">
+              <Link
+                href="/about-us"
+                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Home
-              </a>
-              <a
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/about-us"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
+                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 About Us
-              </a>
-              <a
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/competitions"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
+                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Competition
-              </a>
-              <a
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
+                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Supporter
-              </a>
-              <a
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
+                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Tenant
-              </a>
-              <a
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
+                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Performance
-              </a>
-              <a
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
+                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Sponsor
-              </a>
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
             </div>
+
             {/* Navbar Toggler (Hamburger Menu) */}
             <div className="lg:hidden flex items-center ml-auto">
               <button
@@ -101,10 +110,10 @@ const Navbar = () => {
             </div>
             {/* Register Button */}
             <div className="hidden lg:flex items-center ">
-              <button className="flex flex-row justify-between items-center text-xl bg-white py-3 px-7 rounded-full shadow-lg space-x-2 gap-6 font-medium">
+              <button className="flex flex-row justify-between items-center text-lg bg-white py-3 px-7 rounded-full shadow-lg space-x-2 gap-6 font-medium">
                 Register
                 <div className="p-2 bg-[#F9C84D] rounded-full">
-                  <ArrowUpRight size={25} />
+                  <ArrowUpRight size={18} />
                 </div>
               </button>
             </div>

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white p-8 mt-8 h-screen">
+    <footer className="bg-black text-white p-8 mt-12 h-screen">
       {/* Padding footer */}
       <div className="flex flex-col justify center items-start lg:flex-row lg:items-center lg:hidden">
         {/* Menambah space-y untuk memberi jarak antar elemen */}
@@ -66,8 +66,8 @@ const Footer = () => {
         <p className="mt-4 text-center">&copy; Aircon2.0</p>{" "}
         {/* Jarak yang lebih besar antara divider dan teks */}
       </div>
-      <div className="hidden lg:block w-full gap-3 mt-8">
-        <div className="flex flex-row justify-center items-start gap-20">
+      <div className="hidden lg:block w-full gap-3 mt-8 px-28">
+        <div className="flex flex-row justify-between items-start gap-20">
         <div className="">
           <Image src="/logo-aircon-fix.png" width={200} height={200} alt="logo"></Image>
         </div>
