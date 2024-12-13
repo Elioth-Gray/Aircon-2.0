@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Menambah space-y untuk memberi jarak antar elemen */}
         {/* Gunakan Image dari Next.js */}
         <Image
-          src="/logo-1.png" // Path gambar logo
+          src="/logo-aircon-fix.png" // Path gambar logo
           alt="Airlangga Convention 2.0 Logo"
           width={150} // Tentukan lebar gambar
           height={43} // Tentukan tinggi gambar // Menambah margin bawah logo agar tidak terlalu rapat
@@ -69,7 +69,7 @@ const Footer = () => {
       <div className="hidden lg:block w-full gap-3 mt-8">
         <div className="flex flex-row justify-center items-start gap-20">
         <div className="">
-          <Image src="/logo-1.png" width={200} height={200} alt="logo"></Image>
+          <Image src="/logo-aircon-fix.png" width={200} height={200} alt="logo"></Image>
         </div>
         <div className="flex flex-col">
           <div className="flex flex-row justify-start item-start gap-16">

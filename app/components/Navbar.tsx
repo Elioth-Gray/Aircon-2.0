@@ -26,14 +26,14 @@ const Navbar = () => {
               <a href="/" className="text-black">
                 {/* Gambar logo di sebelah kiri navbar */}
                 <Image
-                  src="/logo-1.png" // Path gambar logo relatif dari folder public
+                  src="/logo-aircon-fix.png" // Path gambar logo relatif dari folder public
                   alt="logo"
                   width={150} // Lebar gambar logo lebih kecil
-                  height={43} // Tinggi gambar logo lebih kecil
+                  height={150} // Tinggi gambar logo lebih kecil
                   className="object-contain lg:hidden" // Menjaga proporsi gambar
                 />
                 <Image
-                  src="/logo-1.png" // Path gambar logo relatif dari folder public
+                  src="/logo-aircon-fix.png" // Path gambar logo relatif dari folder public
                   alt="logo"
                   width={180} // Lebar gambar logo lebih kecil
                   height={180} // Tinggi gambar logo lebih kecil
@@ -96,17 +96,17 @@ const Navbar = () => {
                   zIndex: 10, // Agar toggle berada di atas elemen lainnya
                 }}
               >
-                <List className="text-black w-full" size={20}/>
+                <List className="text-black w-full" size={20} />
               </button>
             </div>
             {/* Register Button */}
             <div className="hidden lg:flex items-center ">
-                <button className="flex flex-row justify-between items-center text-xl bg-white py-3 px-7 rounded-full shadow-lg space-x-2 gap-6 font-medium">
-                  Register
-                  <div className="p-2 bg-[#F9C84D] rounded-full">
-                    <ArrowUpRight size={25} />
-                  </div>
-                </button>
+              <button className="flex flex-row justify-between items-center text-xl bg-white py-3 px-7 rounded-full shadow-lg space-x-2 gap-6 font-medium">
+                Register
+                <div className="p-2 bg-[#F9C84D] rounded-full">
+                  <ArrowUpRight size={25} />
+                </div>
+              </button>
             </div>
           </div>
         </div>

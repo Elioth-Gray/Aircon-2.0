@@ -34,7 +34,7 @@ const ReadMoreButton: React.FC<ReadMoreButtonProps> = ({ onClick }) => {
     //     <FaArrowUp className="text-black transform rotate-45" />
     //   </div>
     // </button>
-    <button className="flex flex-row px-2 py-1 bg-white w-full rounded-full justify-between space-x-2 text-[10px]  items-center font-bold">
+    <button className="flex flex-row px-[0.6rem] py-1 bg-white w-[80%] rounded-full justify-between space-x-2 text-[10px]  items-center font-bold">
       <p>Read More</p>
       <span className="p-2 rounded-full bg-[#F9C84D]">
         <FaArrowUp className="text-black transform rotate-45" />
