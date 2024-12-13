@@ -36,7 +36,7 @@ const CompetitionCard = ({
 
   return (
     <div
-      className="flex flex-col justify-between items-start text-start gap-3 p-6 px-8 text-white rounded-xl relative overflow-hidden w-full h-60"
+      className="flex flex-col justify-between items-start text-start gap-3 p-6 px-8 text-white rounded-xl relative overflow-hidden w-full lg:w-[20%] lg:py-14"
       style={{ backgroundColor: bgColor }}
     >
       <div className="p-3 rounded-full bg-[#D9D9D9]">

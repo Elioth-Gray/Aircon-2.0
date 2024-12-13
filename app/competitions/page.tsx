@@ -43,14 +43,14 @@ const Competition = () => {
 
   return (
     <>
-      <div className="px-10 mt-5">
+      <div className="mt-5 px-10 lg:px-28">
         <BackButton></BackButton>
-        <div className="w-full mt-5">
-          <p className="text-4xl uppercase font-bold">Our</p>
-          <p className="text-4xl uppercase font-bold">Interactive</p>
-          <p className="text-4xl uppercase font-bold">Competitions</p>
+        <div className="w-full mt-5 text-2xl lg:text-4xl ">
+          <p className=" uppercase font-bold">Our</p>
+          <p className=" uppercase font-bold">Interactive</p>
+          <p className=" uppercase font-bold">Competitions</p>
         </div>
-        <div className="w-full mt-5 flex flex-col gap-3">
+        <div className="w-full mt-5 flex flex-col gap-3 lg:flex-wrap lg:flex-row lg:justify-between">
         {competitionData.map((competition, index) => (
         <CompetitionCard
           key={index}
