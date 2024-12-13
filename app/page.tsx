@@ -4,12 +4,33 @@ import ReadMoreButton from "./components/ReadMoreButton";
 const Home = () => {
   return (
     <>
+      <div className="mx-10 mt-3">
+        <div className="flex flex-row gap-5 w-full mb-2">
+          <h1 className="w-1/2 uppercase text-[#000000] text-3xl py-2 font-winter">
+            airlangga <br />
+            convention <br />
+            2.0
+          </h1>
+          <div className="flex flex-col w-full">
+            <div className="w-full flex justify-center items-center pl-1">
+              <Image
+                src="bem-present.svg"
+                width={1000}
+                height={1000}
+                alt="competition"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="mx-10 mt-5 flex flex-col gap-5">
         {/* About Us: */}
         <div className="w-full bg-[#0A3981] px-8 py-8 rounded-3xl flex flex-row justify-between">
           <div className="flex flex-col gap-5">
             <div className="">
-              <h1 className="uppercase text-[#D4ECF8] font-bold text-2xl py-2">
+              <h1 className="uppercase text-[#D4ECF8] text-2xl py-2 font-winter">
                 About Us
               </h1>
               <p className="text-sm text-white">
@@ -31,7 +52,7 @@ const Home = () => {
         {/* Competition:*/}
         <div className="w-full bg-[#D4ECF8] px-8 py-8 rounded-3xl flex flex-col justify-between">
           <div className="flex flex-col gap-2">
-            <h1 className="uppercase text-[#0A3981] font-bold text-2xl">
+            <h1 className="uppercase text-[#0A3981] text-2xl font-winter">
               Competitions
             </h1>
             <div className="flex flex-row gap-5 w-full mb-2">
@@ -62,7 +83,7 @@ const Home = () => {
         {/* Supporter:*/}
         <div className="w-full bg-[#E38F49] px-8 py-8 rounded-3xl flex flex-col justify-between">
           <div className="flex flex-col gap-2">
-            <h1 className="uppercase text-white font-bold text-2xl">
+            <h1 className="uppercase text-white text-2xl font-winter mb-1">
               Support Your Team
             </h1>
             <div className="flex flex-row gap-5 w-full mb-2">
@@ -90,7 +111,7 @@ const Home = () => {
         {/* Performance:*/}
         <div className="w-full bg-[#0A3981] px-8 py-8 rounded-3xl flex flex-col justify-between">
           <div className="flex flex-col gap-2">
-            <h1 className="uppercase text-[#D4ECF8] font-bold text-2xl">
+            <h1 className="uppercase text-[#D4ECF8] font-winter text-2xl">
               Show Your Performance
             </h1>
             <div className="flex flex-row gap-5 w-full mb-2 items-center">
@@ -118,10 +139,10 @@ const Home = () => {
         <div className="w-full bg-[#D4ECF8] px-8 py-8 rounded-3xl flex flex-col justify-between">
           <div className="flex flex-col gap-2">
             <div className="relative">
-              <h1 className="uppercase text-[#0A3981] font-bold text-2xl mb-2">
+              <h1 className="uppercase text-[#0A3981] font-winter text-2xl mb-2">
                 Register Your Tenant!
               </h1>
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-[#1D5298] py-0"></div>
+              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#1D5298] py-0"></div>
             </div>
             <div className="w-full mb-2">
               <p className="w--full text-sm text-[#1D5298]">
@@ -138,27 +159,33 @@ const Home = () => {
         </div>
 
         {/* Sponsor:*/}
-        <div className="w-full bg-[#E38F49] p-4 px-8 py-8 text-white rounded-3xl flex flex-row justify-between">
+        <div className="w-full bg-[#E38F49] p-4 px-8 py-8 rounded-3xl flex flex-row justify-between">
           <div className="flex flex-col gap-3">
             <div>
-              <h1 className="uppercase text-white font-bold text-2xl">
-                Become Our Sponsor
+              <h1 className="uppercase text-white font-winter text-2xl">
+                Become our partner
               </h1>
-              <p>
+            </div>
+            <div className="flex flex-col justify-start items-start">
+              <Image
+                src="partner-ornamen.svg"
+                width={150}
+                height={150}
+                alt="aboutus"
+              ></Image>
+            </div>
+            <div>
+              <p className="text-white text-sm">
                 Become a sponsor of Airlangga Convention 2023 to enhance your
                 company’s reputation through a positive partnership with
                 Universitas Airlangga.
               </p>
             </div>
-            <ReadMoreButton></ReadMoreButton>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <Image
-              src="about-us-ornamen.svg"
-              width={150}
-              height={150}
-              alt="aboutus"
-            ></Image>
+            <div className="w-[60%]">
+              <div className="w-{100%}">
+                <ReadMoreButton></ReadMoreButton>
+              </div>
+            </div>
           </div>
         </div>
       </div>
