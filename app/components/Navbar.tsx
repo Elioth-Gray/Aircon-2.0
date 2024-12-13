@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { List } from "@phosphor-icons/react";
+import ReadMoreButton from "./ReadMoreButton";
+import { ArrowUpRight } from "@phosphor-icons/react";
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -12,11 +14,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative w-full bg-[#EEEDE9] mt-10 mb-5 ">
+      <nav className="relative w-full bg-[#EEEDE9] mt-10 mb-5">
         {" "}
         {/* Navbar background with margin-top */}
-        <div className="mx-auto px-10 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+        <div className="mx-auto px-10 sm:px-6 lg:px-20">
+          <div className="flex flex-row items-center justify-between w-full">
             {/* Logo di sebelah kiri */}
             <div className="flex-shrink-0 flex items-center py-2">
               {" "}
@@ -28,51 +30,58 @@ const Navbar = () => {
                   alt="logo"
                   width={150} // Lebar gambar logo lebih kecil
                   height={43} // Tinggi gambar logo lebih kecil
-                  className="object-contain" // Menjaga proporsi gambar
+                  className="object-contain lg:hidden" // Menjaga proporsi gambar
+                />
+                <Image
+                  src="/logo-1.png" // Path gambar logo relatif dari folder public
+                  alt="logo"
+                  width={180} // Lebar gambar logo lebih kecil
+                  height={180} // Tinggi gambar logo lebih kecil
+                  className="object-contain hidden lg:block" // Menjaga proporsi gambar
                 />
               </a>
             </div>
             {/* Navbar Links on Desktop */}
-            <div className="hidden lg:flex flex-grow justify-center space-x-4">
+            <div className="hidden lg:flex flex--row justify-center items-center space-x-4">
               <a
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
+                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
               >
                 Home
               </a>
               <a
                 href="/about-us"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
+                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
               >
                 About Us
               </a>
               <a
                 href="/competitions"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
+                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
               >
                 Competition
               </a>
               <a
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
+                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
               >
                 Supporter
               </a>
               <a
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
+                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
               >
                 Tenant
               </a>
               <a
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
+                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
               >
                 Performance
               </a>
               <a
                 href="/"
-                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg"
+                className="text-black text-[16px] hover:bg-white hover:text-black hover:font-bold px-3 py-2 rounded-lg lg:text-xl"
               >
                 Sponsor
               </a>
@@ -91,10 +100,13 @@ const Navbar = () => {
               </button>
             </div>
             {/* Register Button */}
-            <div className="hidden lg:flex items-center ml-auto">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                Register
-              </button>
+            <div className="hidden lg:flex items-center ">
+                <button className="flex flex-row justify-between items-center text-xl bg-white py-3 px-7 rounded-full shadow-lg space-x-2 gap-6 font-medium">
+                  Register
+                  <div className="p-2 bg-[#F9C84D] rounded-full">
+                    <ArrowUpRight size={25} />
+                  </div>
+                </button>
             </div>
           </div>
         </div>
