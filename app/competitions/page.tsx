@@ -11,31 +11,34 @@ const Competition = () => {
     },
     {
       title: "Infografis",
-      price: "Rpxx.000,00 per Orang",
+      price:
+        "Rp40.000,00 /orang (Gelombang 1)\n Rp50.000,00 /orang (Gelombang 2)",
       imageSrc: "/Infografis.svg",
       bgColor: "#1F519A",
     },
     {
-      title: "Try Out",
-      price: "Rpxx.000,00 per Orang",
+      title: "Try Out & Tour",
+      price:
+        "Rp70.000,00 /orang (Gelombang 1)\n Rp85.000,00 /orang (Gelombang 2)\n Rp100.000,00 /orang (Gelombang 3)",
       imageSrc: "/Tryout.svg",
       bgColor: "#1F519A",
     },
     {
       title: "Mobile Legends",
-      price: "Rpxx.000,00 per Tim",
+      price: "Rpxx.000,00 /tim",
       imageSrc: "/ML.svg",
       bgColor: "#0A3981",
     },
     {
       title: "Business Plan",
-      price: "Rp50.000,00 per Tim (Early Bid)",
+      price:
+        "Rp50.000,00 /tim (Early Bid)\n Rp60.000,00 /tim (Batch 1)\n Rp75.000,00 /tim (Batch 2)",
       imageSrc: "/Businessplan.svg",
       bgColor: "#0A3981",
     },
     {
       title: "Basket",
-      price: "Rp450.000,00 per Tim (Putra)\nRp400.000,00 per Tim (Putri)",
+      price: "Rp450.000,00 /tim (Putra)\nRp400.000,00 /tim (Putri)",
       imageSrc: "/Cerdascermat.svg",
       bgColor: "#0A3981",
     },

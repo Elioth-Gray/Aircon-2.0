@@ -7,6 +7,7 @@ import {
   CalendarDots,
   PhoneCall,
 } from "@phosphor-icons/react/dist/ssr";
+import router from "next/router";
 
 const karyatulisilmiah = () => {
   return (
@@ -38,7 +39,9 @@ const karyatulisilmiah = () => {
         {/* Tombol Daftar */}
         <button
           className="px-5 py-2 border border-white bg-black rounded-lg shadow-lg text-white mt-5 font-bold"
-          onClick={() => window.open("#", "_blank")}
+          onClick={() =>
+            router.push("/competition/karya-tulis-ilmiah/pendaftaran")
+          }
         >
           Daftar Sekarang
         </button>{" "}
