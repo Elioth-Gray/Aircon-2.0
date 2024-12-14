@@ -100,7 +100,7 @@ const Navbar = () => {
             </div>
 
             {/* Navbar Toggler (Hamburger Menu) */}
-            <div className="lg:hidden flex items-center ml-auto ">
+            <div className="lg:hidden flex items-center ml-auto">
               <button
                 className="flex-col items-center justify-center p-1 py-3 rounded-lg text-black bg-white border border-black"
                 onClick={toggleNavbar}

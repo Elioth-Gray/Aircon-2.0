@@ -46,7 +46,7 @@ const CompetitionCard = ({
         alt={title}
         className="absolute bottom-28 left-56"
       />
-      <h1 className="font-bold text-2xl w-3/4">{title}</h1>
+      <h1 className="text-2xl w-3/4 font-winter mt-2">{title}</h1>
       <div>
         <p>Biaya Pendaftaran:</p>
         <p>{price}</p>

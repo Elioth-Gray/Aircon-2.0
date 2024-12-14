@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const AboutUs = () => {
   return (
     <>
-      <div className="mx-10 mt-8 lg:mx-28 mb-8">
+      <div className="mx-10 mt-6 lg:mx-28 mb-8">
         <BackButton></BackButton>
         <div className="lg:px-20 lg:hidden">
           <div className="lg:flex lg:flex-row w-full">
@@ -19,27 +19,29 @@ const AboutUs = () => {
                 className=""
               />{" "}
               {/* z-index for Image */}
-              <p className="text-8xl font-bold mt-2 lg:text-start">About Us</p>
+              <p className="text-8xl mt-3 lg:text-start font-winter">
+                About Us
+              </p>
             </div>
             <div className="lg:flex lg:flex-col lg:justify-center lg:items-center">
               <div className="w-full mt-5 flex flex-col justify-center gap-5">
                 <p className="text-xl font-medium lg:text-2xl">
-                  Hello Conners!! Kalian pasti bertanya-tanya apa sih AIRCON itu
-                  (Airlangga Convention)?
+                  Hello Conners! Kalian pasti bertanya-tanya apa sih AIRCON
+                  (Airlangga Convention) itu?
                 </p>
                 <p className="text-xl font-medium lg:text-2xl">
-                  Aircon adalah sebuah Kompetisi untuk para pelajar SMA/K
-                  seperti Kompetisi Menulis, Olimpiade Cerdas Cermat, Poster,
-                  Basket, dan Futsal.
+                  AIRCON adalah sebuah kompetisi untuk para pelajar SMA/K
+                  seperti Kompetisi Karya Tulis Ilmiah, Infografis, Try Out,
+                  Mobile Legends, Business Plan, dan Basket.
                 </p>
                 <p className="text-xl font-medium lg:text-2xl">
-                  Kalian juga bisa nonton keseruan AIRCON loh dan hadir saat
-                  sekolah kalian bertanding serta mendukung sebagai supporter.
+                  Kalian juga bisa hadir dan nonton keseruan AIRCON saat sekolah
+                  kalian bertanding serta mendukung sebagai supporter.
                 </p>
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row items-center justify-between mt-5">
+          <div className="w-full flex flex-row items-center justify-between mt-7">
             <Image
               src="/Photo1.jpg"
               width={145}
@@ -102,14 +104,14 @@ const AboutUs = () => {
               alt="Photo1"
               className="rounded-lg lg:w-80"
             ></Image>
-             <Image
+            <Image
               src="/Photo2.jpg"
               width={145}
               height={145}
               alt="Photo2"
               className="rounded-lg lg:w-80"
             ></Image>
-             <Image
+            <Image
               src="/Photo3.jpg"
               width={145}
               height={145}
