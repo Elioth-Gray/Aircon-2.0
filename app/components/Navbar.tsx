@@ -54,7 +54,7 @@ const Navbar = () => {
             {/* Navbar Links on Desktop */}
             <div className="hidden lg:flex flex-row justify-center items-center gap-14 transition-all">
               <Link
-                href="/about-us"
+                href="/"
                 className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Home
@@ -75,14 +75,14 @@ const Navbar = () => {
                 <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
               </Link>
               <Link
-                href="/"
+                href="/supporter"
                 className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Supporter
                 <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
               </Link>
               <Link
-                href="/"
+                href="/tenant"
                 className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
                 Tenant
@@ -138,54 +138,54 @@ const Navbar = () => {
             <div className="lg:hidden bg-white w-full mt-3 z-50 min-h-screen fixed left-0 overflow-y-auto">
               <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white rounded-lg flex flex-col gap-3">
                 {/* Menambahkan padding untuk membuat jarak lebih besar */}
-                <a
+                <Link
                   href="/"
                   className="text-black text-[16px] block hover:text-[#B6723A] hover:font-bold  rounded-lg pl-4"
                 >
                   Home
-                </a>
+                </Link>
                 {/* Menambahkan padding kiri */}
-                <a
+                <Link
                   href="/about-us"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
                 >
                   About Us
-                </a>
+                </Link>
                 {/* Menambahkan padding kiri */}
-                <a
+                <Link
                   href="/competitions"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
                 >
                   Competition
-                </a>
+                </Link>
                 {/* Menambahkan padding kiri */}
-                <a
+                <Link
                   href="/"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
                 >
                   Supporter
-                </a>
+                </Link>
                 {/* Menambahkan padding kiri */}
-                <a
+                <Link
                   href="/"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
                 >
                   Tenant
-                </a>
+                </Link>
                 {/* Menambahkan padding kiri */}
-                <a
+                <Link
                   href="/"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
                 >
                   Performance
-                </a>
+                </Link>
                 {/* Menambahkan padding kiri */}
-                <a
+                <Link
                   href="/"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
                 >
                   Sponsor
-                </a>
+                </Link>
                 {/* Menambahkan padding kiri */}
               </div>
             </div>

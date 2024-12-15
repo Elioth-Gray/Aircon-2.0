@@ -17,7 +17,7 @@ const Competition = () => {
       bgColor: "#1F519A",
     },
     {
-      title: "Try Out & Tour",
+      title: "Try Out",
       price:
         "Rp70.000,00 /orang (Gelombang 1)\n Rp85.000,00 /orang (Gelombang 2)\n Rp100.000,00 /orang (Gelombang 3)",
       imageSrc: "/Tryout.svg",
@@ -48,10 +48,20 @@ const Competition = () => {
     <>
       <div className="mt-5 px-10 lg:px-28">
         <BackButton></BackButton>
-        <div className="w-full mt-5 text-4xl lg:text-4xl ">
-          <p className=" uppercase font-winter">Our</p>
+        <div className="w-full mt-5 text-4xl lg:text-8xl ">
+          <p className=" uppercase font-winter">
+            Our{" "}
+            <span
+              className=" uppercase font-winter text-[#D4ECF8]"
+              style={{
+                WebkitTextStroke: "1px #0A3981",
+              }}
+            >
+              Interactive
+            </span>
+          </p>
           <p
-            className=" uppercase font-winter text-[#D4ECF8]"
+            className=" uppercase font-winter text-[#D4ECF8] block lg:hidden"
             style={{
               WebkitTextStroke: "1px #0A3981",
             }}
