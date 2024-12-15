@@ -15,7 +15,7 @@ const SupporterCard = ({
   location: String;
 }) => {
   return (
-    <div className="bg-white border-orange-300 rounded-lg p-6 max-w-md mx-auto shadow-md relative border-2 mt-3">
+    <div className="bg-white border-orange-300 rounded-lg p-6 max-w-md mx-auto shadow-md relative border-2 mt-3 w-full">
       <h1 className="text-md font-bold text-blue-900 mb-2 text-center inter-extra-bold">
         {school1.toUpperCase()}
       </h1>
