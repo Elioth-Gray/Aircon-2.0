@@ -18,7 +18,7 @@ const karyatulisilmiah = () => {
         <BackButton />
         {/*  */}
         {/* Card */}
-        <div className="flex flex-col justify-between items-start text-start gap-3 bg-[#1F519A] p-6 px-8  text-white rounded-xl relative overflow-hidden w-full h-auto mt-8">
+        <div className="flex flex-col justify-between items-start text-start gap-3 bg-[#1F519A] p-6 px-8 text-white rounded-xl relative overflow-hidden w-full h-auto mt-8 hover:bg-[#E38F49]">
           <div className="p-3 rounded-full bg-[#D9D9D9]">
             <BookOpenText size={35} className="text-black" />
           </div>
@@ -42,10 +42,22 @@ const karyatulisilmiah = () => {
         <button
           className="px-5 py-2 border border-white bg-black rounded-lg shadow-lg text-white mt-5 font-bold"
           onClick={() =>
-            router.push("/competitions/karya-tulis-ilmiah/pendaftaran")
+            router.push(
+              "/competitions/karya-tulis-ilmiah/pendaftaran-tahap-awal"
+            )
           }
         >
-          Daftar Sekarang
+          Daftar Tahap Awal
+        </button>{" "}
+        <button
+          className="px-5 py-2 border border-white bg-black rounded-lg shadow-lg text-white mt-5 font-bold"
+          onClick={() =>
+            router.push(
+              "/competitions/karya-tulis-ilmiah/pendaftaran-tahap-lanjut"
+            )
+          }
+        >
+          Daftar Tahap Selanjutnya
         </button>{" "}
         {/*  */}
         {/* Sub Title */}
@@ -59,7 +71,13 @@ const karyatulisilmiah = () => {
           <div className="w-full flex flex-row justify-start items-center gap-2">
             <PhoneCall size={28} />
             <p className="text-sm font-semibold">
-              CP: +62 819-9671-6532 (Fajri)
+              <a
+                href="https://wa.me/6281996716532"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CP: +62 819-9671-6532 (Fajri)
+              </a>
             </p>
           </div>
         </div>
@@ -186,7 +204,7 @@ const karyatulisilmiah = () => {
               <li className="text-wrap">
                 Berkas sebagaimana dimaksud dalam poin 1 dikirimkan dalam format
                 PDF melalui formulir Pendaftaran AIRCON yang dapat dilakukan
-                melalui Website
+                melalui website
               </li>
               <li className="text-wrap">
                 Setelah mengirim berkas pendaftaran, ketua tim wajib melakukan
@@ -209,7 +227,7 @@ const karyatulisilmiah = () => {
         {/* Ketentuan Pendaftaran Tahap Lanjut (Full Paper) */}
         <div className="w-full flex flex-col mt-5 gap-1">
           <h1 className="text-2xl font-winter uppercase">
-            Ketentuan Pendaftaran TAHAP LANJUTAN <br /> (FULL PAPER)
+            Ketentuan Pendaftaran TAHAP selanjutnya <br /> (FULL PAPER)
           </h1>
           <div className="flex flex-col w-full gap-1">
             <ol
@@ -310,9 +328,51 @@ const karyatulisilmiah = () => {
           <h1 className="font-winter text-xl w-3/4 text-wrap text-center">
             Pengumuman Lolos Tahap Abstrak
           </h1>
-          <button className="py-2 px-4 rounded-lg text-sm bg-white shadow-lg">
+          <p className="text-sm text-center">
+            Selamat! kepada tim-tim yang berhasil lolos Tahap Abstrak. Bagi tim
+            yang telah lolos, selanjutnya akan memasuki Tahap Full Paper
+          </p>
+          <button
+            className="py-2 px-4 rounded-lg text-sm bg-white shadow-lg"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/drive/folders/1mHSCDcxIwaph0rTQ3-bVfNaMLm3NF8ut?usp=sharing",
+                "_blank"
+              )
+            }
+          >
             Cek Di Sini
           </button>
+          <p className="text-sm text-center">
+            Tetap semangat untuk semua peserta! Bagi yang belum lolos, jangan
+            berkecil hati. Kesempatan lain masih terbuka lebar! Airlangga 2.0
+            #StriveforExcellence
+          </p>
+          <div className="w-screen py-[0.05rem] bg-black"></div>
+          <h1 className="font-winter text-xl w-3/4 text-wrap text-center">
+            PENGUMUMAN FINALIS LKTI AIRCON 2.0
+          </h1>
+          <p className="text-sm text-center">
+            Selamat! kepada tim-tim yang berhasil lolos Tahap Full Paper. Bagi
+            tim yang telah lolos, selanjutnya akan memasuki Tahap Presentasi
+            Final
+          </p>
+          <button
+            className="py-2 px-4 rounded-lg text-sm bg-white shadow-lg"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/drive/folders/1NQPC7WaYUFOWLvoGR35_64XBpFFIMMb8?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            Cek Di Sini
+          </button>
+          <p className="text-sm text-center">
+            Tetap semangat untuk semua peserta! Bagi yang belum lolos, jangan
+            berkecil hati. Kesempatan lain masih terbuka lebar! Airlangga 2.0
+            #StriveforExcellence
+          </p>
         </div>
       </div>
     </>

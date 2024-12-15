@@ -139,7 +139,7 @@ const CompetitionPage = () => {
                 <div className="w-full flex flex-row justify-between gap-2">
                   <div className="flex flex-col w-full gap-1">
                     <label htmlFor="ktpFile">
-                      File Abstrak (Format pdf, Size limit 5 MB)
+                      File Abstrak (Format pdf, Size limit 5 MB)*
                     </label>
                     <input
                       type="file"
@@ -159,21 +159,25 @@ const CompetitionPage = () => {
               </>
             ) : null}
           </form>
-          <div className="w-full mt-5 flex flex-row justify-between">
-            {step > 0 ? (
+          <div className="w-full mt-5 flex flex-row justify-start">
+            {step === 1 ? (
+              <button
+                className="bg-black text-white px-5 py-2 rounded-lg flex flex-row justify-center items-center"
+                onClick={() => {
+                  window.location.href =
+                    "/competitions/karya-tulis-ilmiah/pendaftaran-tahap-awal/reminder";
+                }}
+              >
+                Submit
+              </button>
+            ) : (
               <button
                 className="bg-black text-white px-8 py-2 rounded-lg flex flex-row justify-center items-center"
-                onClick={prevStep}
+                onClick={nextStep}
               >
-                Prev
+                Next
               </button>
-            ) : null}
-            <button
-              className="bg-black text-white px-8 py-2 rounded-lg flex flex-row justify-center items-center"
-              onClick={nextStep}
-            >
-              Next
-            </button>
+            )}
           </div>
         </div>
       </div>
