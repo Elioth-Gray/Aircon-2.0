@@ -93,19 +93,7 @@ const Footer = () => {
                 <Link href="/about-us">Opening Party</Link>
                 <Link href="/about-us">Closing Party</Link>  
                 <Link href="/about-us">Supporter</Link>  
-                <Link href="/about-us">Tenant</Link>
-                <Link href="/about-us">Performance</Link>
                 <Link href="/about-us">Sponsor & Media Partner</Link>          
-              </div>
-            </div>
-            <div className="text-xl">
-              <h1 className="text-xl mb-2 font-bold">Competition</h1>
-              <div className="w-full flex flex-col justify-start items-start gap-3">
-                <Link href="/about-us">Karya Tulis Ilmiah</Link>
-                <Link href="/about-us">Infografis</Link>  
-                <Link href="/about-us">Try Out</Link>  
-                <Link href="/about-us">Business Plan</Link>
-                <Link href="/about-us">Basket</Link>        
               </div>
             </div>
           </div>
