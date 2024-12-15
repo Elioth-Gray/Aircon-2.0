@@ -90,7 +90,7 @@ const Home = () => {
                 </h1>
                 <p className="text-sm text-white">{desc.aboutUs.desc}</p>
               </div>
-              <ReadMoreButton url={desc.aboutUs.url} width="80%"/>
+              <ReadMoreButton url={desc.aboutUs.url} width="80%" />
             </div>
             <div className="flex flex-col justify-center items-center">
               <Image
@@ -151,7 +151,7 @@ const Home = () => {
               </div>
               <div className="w-[60%]">
                 <div className="w-{100%}">
-                  <ReadMoreButton url={desc.supporter.url} width="80%"/>
+                  <ReadMoreButton url={desc.supporter.url} width="80%" />
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@ const Home = () => {
               </div>
               <div className="w-[60%]">
                 <div className="w-{100%}">
-                  <ReadMoreButton url={desc.performance.url}width="80%" />
+                  <ReadMoreButton url={desc.performance.url} width="80%" />
                 </div>
               </div>
             </div>
@@ -269,7 +269,9 @@ const Home = () => {
                     Show Your Performance
                   </h1>
                   <p className="text-sm">
-                  Prove that your dance team or band is the best! Show your skills, passion, and creativity to take the stage and leave a lasting impression.
+                    Prove that your dance team or band is the best! Show your
+                    skills, passion, and creativity to take the stage and leave
+                    a lasting impression.
                   </p>
                   <ReadMoreButton url={desc.aboutUs.url} width="80%" />
                 </div>
@@ -324,9 +326,7 @@ const Home = () => {
                       <h1 className="font-winter text-2xl text-start w-full">
                         register your tenant!
                       </h1>
-                      <div className="w-full py-[0.1rem] bg-white">
-
-                      </div>
+                      <div className="w-full py-[0.1rem] bg-white"></div>
                       <div className="flex flex-row">
                         <p className="text-sm text-wrap">
                           Come on, support and enliven the stands! Get your
@@ -352,7 +352,7 @@ const Home = () => {
                         company’s reputation through a positive partnership with
                         Universitas Airlangga.
                       </p>
-                      <ReadMoreButton url={desc.aboutUs.url}  width="40%"/>
+                      <ReadMoreButton url={desc.aboutUs.url} width="40%" />
                     </div>
                   </div>
                 </div>
