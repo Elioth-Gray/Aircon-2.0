@@ -19,7 +19,7 @@ export default function Cards({
 }) {
   return (
     <div
-      className="px-4 sm:px-6 lg:px-8 rounded-3xl py-5 shadow-lg" // Tambahkan tanda kutip
+      className="px-4 sm:px-6 lg:px-8 rounded-3xl py-5 shadow-lg"
       style={{ backgroundColor: color }}
     >
       <div className="flex flex-col items-center">
@@ -42,7 +42,7 @@ export default function Cards({
         <p className="text-xs pb-3 pt-1" style={{ color: bodyColor }}>
           {description}
         </p>
-        <ReadMoreButton />
+        <ReadMoreButton url="#" width="100%" />
       </div>
     </div>
   );
