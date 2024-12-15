@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import BackButton from "@/app/components/BackButton";
 import Image from "next/image";
 import {
@@ -7,9 +8,10 @@ import {
   CalendarDots,
   PhoneCall,
 } from "@phosphor-icons/react/dist/ssr";
-import router from "next/router";
 
 const karyatulisilmiah = () => {
+  const router = useRouter();
+
   return (
     <>
       <div className="mx-10 mt-5">
@@ -40,7 +42,7 @@ const karyatulisilmiah = () => {
         <button
           className="px-5 py-2 border border-white bg-black rounded-lg shadow-lg text-white mt-5 font-bold"
           onClick={() =>
-            router.push("/competition/karya-tulis-ilmiah/pendaftaran")
+            router.push("/competitions/karya-tulis-ilmiah/pendaftaran")
           }
         >
           Daftar Sekarang
