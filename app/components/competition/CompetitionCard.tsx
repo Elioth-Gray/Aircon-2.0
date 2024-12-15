@@ -36,7 +36,7 @@ const CompetitionCard = ({
 
   return (
     <div
-      className={`flex flex-col justify-between items-start text-start gap-3 p-6 px-8 text-white rounded-xl relative overflow-hidden w-full bg-[${bgColor}] lg:w-full lg:py-14 cursor-pointer hover:bg-[#B6723A] transition-all ease-in-out delay-100`}
+      className={`flex flex-col justify-between items-start text-start gap-3 p-6 px-8 text-white rounded-xl relative overflow-hidden w-full bg-[${bgColor}] lg:w-full lg:py-14 cursor-pointer hover:bg-[#B6723A] transition-all ease-in-out hover:shadow-2xl`}
     >
       <div className="p-3 rounded-full bg-[#D9D9D9]">{getIcon(title)}</div>
       <Image
@@ -44,9 +44,9 @@ const CompetitionCard = ({
         width={200}
         height={200}
         alt={title}
-        className="absolute bottom-28 left-56"
+        className="absolute bottom-28 left-56 lg:left-[21rem] lg:bottom-40"
       />
-      <h1 className="text-2xl w-3/4 font-winter mt-2">{title}</h1>
+      <h1 className="text-2xl w-3/4 font-winter">{title}</h1>
       <div>
         <p>Biaya Pendaftaran:</p>
         <p>{price}</p>
