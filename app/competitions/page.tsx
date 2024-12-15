@@ -49,24 +49,16 @@ const Competition = () => {
       <div className="mt-5 px-10 lg:px-28">
         <BackButton></BackButton>
         <div className="w-full mt-5 text-4xl lg:text-8xl ">
-          <p className=" uppercase font-winter">
+          <p className="uppercase font-winter">
             Our{" "}
             <span
-              className=" uppercase font-winter text-[#D4ECF8]"
+              className="uppercase font-winter text-[#D4ECF8]"
               style={{
                 WebkitTextStroke: "1px #0A3981",
               }}
             >
               Interactive
             </span>
-          </p>
-          <p
-            className=" uppercase font-winter text-[#D4ECF8] block lg:hidden"
-            style={{
-              WebkitTextStroke: "1px #0A3981",
-            }}
-          >
-            Interactive
           </p>
           <p className="uppercase font-winter">Competitions</p>
         </div>

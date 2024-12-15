@@ -27,13 +27,12 @@ const Navbar = () => {
           isClick ? "fixed z-20 top-0 left-0" : "relative"
         } w-full bg-[#EEEDE9] pt-10 pb-5`}
       >
-        {/* Navbar background with margin-top */}
         <div className="mx-auto px-10 sm:px-6 lg:mx-28 lg:px-0">
           <div className="flex flex-row items-center justify-between w-full">
             {/* Logo di sebelah kiri */}
             <div className="flex-shrink-0 flex items-center py-2">
               {/* Menambahkan padding vertical */}
-              <a href="/" className="text-black">
+              <Link href="/" className="text-black">
                 {/* Gambar logo di sebelah kiri navbar */}
                 <Image
                   src="/logo-aircon-fix.png" // Path gambar logo relatif dari folder public
@@ -49,7 +48,7 @@ const Navbar = () => {
                   height={180} // Tinggi gambar logo lebih kecil
                   className="object-contain hidden lg:block" // Menjaga proporsi gambar
                 />
-              </a>
+              </Link>
             </div>
             {/* Navbar Links on Desktop */}
             <div className="hidden lg:flex flex-row justify-center items-center gap-14 transition-all">
@@ -82,20 +81,6 @@ const Navbar = () => {
                 <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
               </Link>
               <Link
-                href="/tenant"
-                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
-              >
-                Tenant
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
-              </Link>
-              <Link
-                href="/"
-                className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
-              >
-                Performance
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
-              </Link>
-              <Link
                 href="/"
                 className="text-black group relative transition-all duration-300 ease-in-out hover:text-[#B6723A] rounded-lg lg:text-lg"
               >
@@ -118,17 +103,19 @@ const Navbar = () => {
               </button>
             </div>
             {/* Register Button */}
-            <div className="hidden lg:flex items-center ">
-              <button className="flex flex-row justify-between items-center text-lg bg-white py-3 px-7 rounded-full shadow-lg space-x-2 gap-6 font-medium">
-                Register
-                <div className="p-2 bg-[#F9C84D] rounded-full">
-                  <ArrowUpRight size={18} />
-                </div>
-              </button>
+            <div className="hidden lg:flex items-center">
+              <Link href="/competitions">
+                <button className="flex flex-row justify-between items-center text-lg bg-white py-3 px-7 rounded-full shadow-lg space-x-2 gap-6 font-medium">
+                  Register
+                  <div className="p-2 bg-[#F9C84D] rounded-full">
+                    <ArrowUpRight size={20} weight="bold" />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
-        {/* Navbar Links on Mobile */}
+        {/* Navbar on Mobile */}
         {isClick && (
           <>
             <div
@@ -137,56 +124,41 @@ const Navbar = () => {
             ></div>
             <div className="lg:hidden bg-white w-full mt-3 z-50 min-h-screen fixed left-0 overflow-y-auto">
               <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white rounded-lg flex flex-col gap-3">
-                {/* Menambahkan padding untuk membuat jarak lebih besar */}
                 <Link
                   href="/"
                   className="text-black text-[16px] block hover:text-[#B6723A] hover:font-bold  rounded-lg pl-4"
+                  onClick={toggleNavbar}
                 >
                   Home
                 </Link>
-                {/* Menambahkan padding kiri */}
                 <Link
                   href="/about-us"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
+                  onClick={toggleNavbar}
                 >
                   About Us
                 </Link>
-                {/* Menambahkan padding kiri */}
                 <Link
                   href="/competitions"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
+                  onClick={toggleNavbar}
                 >
                   Competition
                 </Link>
-                {/* Menambahkan padding kiri */}
                 <Link
-                  href="/"
+                  href="/supporter"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
+                  onClick={toggleNavbar}
                 >
                   Supporter
                 </Link>
-                {/* Menambahkan padding kiri */}
                 <Link
-                  href="/"
+                  href="https://drive.google.com/drive/folders/1Tf2h_VbgtYfKrqnOnBtJuRBYVnphlfzX?usp=drive_link"
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
-                >
-                  Tenant
-                </Link>
-                {/* Menambahkan padding kiri */}
-                <Link
-                  href="/"
-                  className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
-                >
-                  Performance
-                </Link>
-                {/* Menambahkan padding kiri */}
-                <Link
-                  href="/"
-                  className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
+                  onClick={toggleNavbar}
                 >
                   Sponsor
                 </Link>
-                {/* Menambahkan padding kiri */}
               </div>
             </div>
           </>

@@ -16,7 +16,7 @@ const Home = () => {
     sponsor: {
       title: "Become our partner",
       desc: "Become a sponsor of Airlangga Convention 2023 to enhance your company’s reputation through a positive partnership with Universitas Airlangga.",
-      url: "/",
+      url: "https://drive.google.com/drive/folders/1Tf2h_VbgtYfKrqnOnBtJuRBYVnphlfzX?usp=drive_link",
     },
     competition: {
       title: "Competitions",
@@ -157,60 +157,11 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Performance:*/}
-          <div className="w-full bg-[#0A3981] px-8 py-8 rounded-3xl flex flex-col justify-between">
-            <div className="flex flex-col gap-2">
-              <h1 className="uppercase text-[#D4ECF8] font-winter text-2xl">
-                {desc.performance.title}
-              </h1>
-              <div className="flex flex-row gap-5 w-full mb-2 items-center">
-                <p className="w-1/2 text-sm text-white">
-                  {desc.performance.desc}
-                </p>
-                <div className="w-1/2 flex items-end justify-end">
-                  <Image
-                    src="performance-ornamen.svg"
-                    width={50}
-                    height={50}
-                    alt="supporter-image"
-                  />
-                </div>
-              </div>
-              <div className="w-[60%]">
-                <div className="w-{100%}">
-                  <ReadMoreButton url={desc.performance.url} width="80%" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Tenant:*/}
-          <div className="w-full bg-[#D4ECF8] px-8 py-8 rounded-3xl flex flex-col justify-between">
-            <div className="flex flex-col gap-2">
-              <div className="relative">
-                <h1 className="uppercase text-[#0A3981] font-winter text-2xl mb-2">
-                  {desc.tenant.title}
-                </h1>
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#1D5298] py-0"></div>
-              </div>
-              <div className="w-full mb-2">
-                <p className="w--full text-sm text-[#1D5298]">
-                  {desc.tenant.desc}
-                </p>
-              </div>
-              <div className="w-[60%]">
-                <div className="w-{100%}">
-                  <ReadMoreButton url={desc.tenant.url} width="80%" />
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Sponsor:*/}
-          <div className="w-full bg-[#E38F49] p-4 px-8 py-8 rounded-3xl flex flex-row justify-between">
+          <div className="w-full bg-[#0A3981] p-4 px-8 py-8 rounded-3xl flex flex-row justify-between">
             <div className="flex flex-col gap-3">
               <div>
-                <h1 className="uppercase text-white font-winter text-2xl">
+                <h1 className="uppercase text-[#D4ECF8] font-winter text-2xl">
                   {desc.sponsor.title}
                 </h1>
               </div>

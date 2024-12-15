@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const AboutUs = () => {
   return (
     <>
-      <div className="mx-10 mt-6 lg:mx-28 mb-8">
+      <div className="mx-10 mt-5 lg:mx-28 mb-8">
         <BackButton></BackButton>
         <div className="lg:px-20 lg:hidden">
           <div className="lg:flex lg:flex-row w-full">
