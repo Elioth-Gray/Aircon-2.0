@@ -14,7 +14,7 @@ const CompetitionPage = () => {
       setStep((step) => step + 1);
     } else {
       router.push(
-        "/competitions/karya-tulis-ilmiah/pendaftaran-tahap-full/konfirmasi"
+        "/competitions/karya-tulis-ilmiah/pendaftaran-tahap-lanjut/konfirmasi"
       );
     }
   };
@@ -162,12 +162,16 @@ const CompetitionPage = () => {
                   </div>
                 </div>
                 <div className="w-full flex flex-col gap-1">
-                  <label htmlFor="">Sub-Tema*</label>
+                  <label htmlFor="subTema">Sub-Tema*</label>
                   <select
-                    name=""
-                    id=""
+                    name="subTema"
+                    id="subTema"
                     className="w-2/3 px-2 py-2 rounded-lg border border-black"
+                    defaultValue=""
                   >
+                    <option value="" disabled>
+                      -
+                    </option>
                     <option value="Lingkungan">Lingkungan</option>
                     <option value="Kesehatan">Kesehatan</option>
                     <option value="Teknologi">Teknologi</option>

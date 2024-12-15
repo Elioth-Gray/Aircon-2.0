@@ -12,9 +12,9 @@ const ConfirmationPage = () => {
           <div className="w-full flex flex-col gap-2">
             <div className="flex flex-row start items-center gap-6">
               <p className="flex flex-row justify-between items-center w-[38%]">
-                <span>Nama Tim</span> <span>:</span>
+                <span>Nama Lengkap</span> <span>:</span>
               </p>
-              <p>(Team Name)</p>
+              <p>(Full Name)</p>
             </div>
             <div className="flex flex-row start items-center gap-6">
               <p className="flex flex-row justify-between items-center w-[38%]">
@@ -26,7 +26,7 @@ const ConfirmationPage = () => {
               <p className="flex flex-row justify-between items-center w-[38%]">
                 <span>Cabang Lomba</span> <span>:</span>
               </p>
-              <p>Karya Tulis Ilmiah</p>
+              <p>Infografis</p>
             </div>
             <div className="flex flex-row start items-center gap-6">
               <p className="flex flex-row justify-between items-center w-[38%]">
@@ -85,7 +85,18 @@ const ConfirmationPage = () => {
             </div>
           </div>
         </form>
-        <button className="bg-black text-white px-5 py-2 rounded-lg flex flex-row justify-center items-center mt-5">
+        <button
+          className="bg-black text-white px-5 py-2 rounded-lg flex flex-row justify-center items-center mt-5"
+          onClick={(e) => {
+            e.preventDefault();
+            try {
+              window.location.href =
+                "/competitions/infografis/pendaftaran/konfirmasi/reminder";
+            } catch (error) {
+              console.error("Navigation error:", error);
+            }
+          }}
+        >
           DAFTAR
         </button>
       </div>
