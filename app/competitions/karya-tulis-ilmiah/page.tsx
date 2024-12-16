@@ -29,31 +29,28 @@ const karyatulisilmiah = () => {
               alt="KTI"
               className="absolute bottom-32 left-52 lg:left-80"
             ></Image>
-            <h1 className="font-winter mt-5 text-2xl w-3/4 text-wrap">
+            <h1 className="font-winter mt-5 text-2xl w-3/4 text-wrap lg:mt-1">
               Karya Tulis Ilmiah
             </h1>
             <div>
-              <p>Biaya Pendaftaran:</p>
+              <p className="lg:mt-1">Biaya Pendaftaran:</p>
               <p>GRATIS (Tahap Awal)</p>
             </div>
           </div>
           {/*  */}
           <div className="lg:w-full items-center lg:col-span-2">
             <h1 className="font-winter text-6 w-full text-4xl lg:mt-4">
-              Karya Tulis Ilmiah
+              Lomba Karya Tulis Ilmiah
             </h1>
-            {/*  */}
             {/* Sub Title */}
             <div className="w-full mt-5 flex flex-col gap-3">
               <div className="w-full flex flex-row justify-start items-center gap-2">
                 <CalendarDots size={28} />
-                <p className="text-sm font-semibold">
-                  16 Desember 2024 - 22 Januari 2025
-                </p>
+                <p className="text-sm">16 Desember 2024 - 26 Januari 2025</p>
               </div>
               <div className="w-full flex flex-row justify-start items-center gap-2">
                 <PhoneCall size={28} />
-                <p className="text-sm font-semibold">
+                <p className="text-sm">
                   <a
                     href="https://wa.me/6281996716532"
                     target="_blank"
@@ -64,7 +61,6 @@ const karyatulisilmiah = () => {
                 </p>
               </div>
             </div>
-            {/*  */}
             {/* Tombol Daftar */}
             <button
               className="px-5 py-2 border border-white bg-black rounded-lg shadow-lg text-white mt-5 font-bold"
@@ -89,7 +85,6 @@ const karyatulisilmiah = () => {
             </button>{" "}
           </div>
         </div>
-
         {/* Tema */}
         <div className="flex flex-col lg:flex-row mt-5 gap-5 lg:mt-10">
           <div className="w-full lg:w-1/2">
@@ -100,7 +95,7 @@ const karyatulisilmiah = () => {
             </p>
           </div>
           <div className="w-full">
-            <h1 className="font-winter uppercase text-2xl"> sub tema</h1>
+            <h1 className="font-winter uppercase text-2xl">sub tema</h1>
             <div className="w-full flex flex-row justify-between lg:justify-start lg:gap-5">
               <div>
                 <p>Lingkup Sains dan Teknologi:</p>
@@ -319,14 +314,14 @@ const karyatulisilmiah = () => {
       {/*  */}
       {/* Click to Download Full Guide Book */}
       <div className="w-full flex flex-row justify-between items-center text-center mt-8 mb-2">
-        <div className="w-1/3 py-[0.05rem] bg-black"></div>
+        <div className="w-1/3 py-[0.05rem] bg-black lg:w-full"></div>
         <a
           href="https://drive.google.com/drive/folders/1NjYSYYtaygay5H9q7jCGSjE0XBSU--Av?usp=drive_link"
           className="w-1/3 text-sm font-bold"
         >
           Click to Download Full Guide Book
         </a>
-        <div className="w-1/3 py-[0.05rem] bg-black"></div>
+        <div className="w-1/3 py-[0.05rem] bg-black lg:w-full"></div>
       </div>
       {/*  */}
       {/* Pengumuman Lolos Tahap Abstrak */}
