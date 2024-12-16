@@ -1,21 +1,30 @@
+"use client"
+
 import Image from "next/image";
 import { BookOpenText } from "@phosphor-icons/react/dist/ssr";
 import { Newspaper } from "@phosphor-icons/react/dist/ssr";
 import { GameController } from "@phosphor-icons/react/dist/ssr";
 import { FileText } from "@phosphor-icons/react/dist/ssr";
 import { Basketball } from "@phosphor-icons/react/dist/ssr";
+import { useRouter } from "next/navigation";
 
 const CompetitionCard = ({
   title,
   price,
   imageSrc,
   bgColor = "#1F519A",
+  route
 }: {
   title: string;
   price: string;
   imageSrc: string;
   bgColor?: string;
+  route: String;
 }) => {
+
+  const router = useRouter();
+
+
   const getIcon = (title: string) => {
     if (title.toLowerCase().includes("karya tulis ilmiah")) {
       return <BookOpenText size={35} className="text-black" />;
@@ -37,7 +46,7 @@ const CompetitionCard = ({
   return (
     <div
       className={`flex flex-col justify-between items-start text-start gap-3 p-6 px-8 text-white rounded-xl relative overflow-hidden w-full bg-[${bgColor}] lg:w-full lg:py-14 cursor-pointer hover:bg-[#B6723A] transition-all ease-in-out hover:shadow-2xl`}
-    >
+     onClick={() => {router.push(`/competitions/${route}`)}}>
       <div className="p-3 rounded-full bg-[#D9D9D9]">{getIcon(title)}</div>
       <Image
         src={imageSrc}

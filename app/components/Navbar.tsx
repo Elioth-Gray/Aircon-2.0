@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="mx-auto px-10 sm:px-6 lg:mx-28 lg:px-0">
           <div className="flex flex-row items-center justify-between w-full">
             {/* Logo di sebelah kiri */}
-            <div className="flex-shrink-0 flex items-center py-2">
+            <div className="flex-shrink-0 flex items-center py-2 focus:bg-none">
               {/* Menambahkan padding vertical */}
               <Link href="/" className="text-black">
                 {/* Gambar logo di sebelah kiri navbar */}

@@ -91,7 +91,38 @@ const karyatulisilmiah = () => {
           </div>
         </div>
 
-        
+        {/* Tema */}
+        <div className="flex flex-col lg:flex-row mt-5 gap-5 lg:mt-10">
+          <div className="w-full lg:w-1/2">
+            <h1 className="font-winter text-2xl uppercase">Tema</h1>
+            <p>
+              “Sinergi Generasi Post-Millenial dan Teknologi dalam Menjawab
+              Tantangan Menuju Indonesia Emas 2045”
+            </p>
+          </div>
+          <div className="w-full">
+            <h1 className="font-winter uppercase text-2xl"> sub tema</h1>
+            <div className="w-full flex flex-row justify-between lg:justify-start lg:gap-5">
+              <div>
+                <p>Lingkup Sains dan Teknologi:</p>
+                <ol className="list-decimal ml-4">
+                  <li>Lingkungan</li>
+                  <li>Kesehatan</li>
+                  <li>Teknologi</li>
+                </ol>
+              </div>
+              <div>
+                <p>Lingkup Sosial dan Humaniora:</p>
+                <ol className="list-decimal ml-4">
+                  <li>Ekonomi</li>
+                  <li>Sosial Budaya</li>
+                  <li>Pendidikan</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Ketentuan Peserta */}
         <div className="w-full flex flex-col mt-5 gap-1 lg:mt-10">
           <h1 className="text-2xl font-winter uppercase">Ketentuan Peserta:</h1>

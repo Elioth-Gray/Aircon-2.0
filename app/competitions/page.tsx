@@ -8,6 +8,7 @@ const Competition = () => {
       price: "GRATIS (Tahap Awal)",
       imageSrc: "/KTI.svg",
       bgColor: "#1F519A",
+      route: "karya-tulis-ilmiah"
     },
     {
       title: "Infografis",
@@ -15,6 +16,7 @@ const Competition = () => {
         "Rp40.000,00 /orang (Gelombang 1)\n Rp50.000,00 /orang (Gelombang 2)",
       imageSrc: "/Infografis.svg",
       bgColor: "#1F519A",
+      route: "infografis"
     },
     {
       title: "Try Out",
@@ -22,12 +24,14 @@ const Competition = () => {
         "Rp70.000,00 /orang (Gelombang 1)\n Rp85.000,00 /orang (Gelombang 2)\n Rp100.000,00 /orang (Gelombang 3)",
       imageSrc: "/Tryout.svg",
       bgColor: "#1F519A",
+      route: "karya-tulis-ilmiah"
     },
     {
       title: "Mobile Legends",
       price: "Rpxx.000,00 /tim",
       imageSrc: "/ML.svg",
       bgColor: "#0A3981",
+      route: "karya-tulis-ilmiah"
     },
     {
       title: "Business Plan",
@@ -35,12 +39,14 @@ const Competition = () => {
         "Rp50.000,00 /tim (Early Bid)\n Rp60.000,00 /tim (Batch 1)\n Rp75.000,00 /tim (Batch 2)",
       imageSrc: "/Businessplan.svg",
       bgColor: "#0A3981",
+      route: "karya-tulis-ilmiah"
     },
     {
       title: "Basket",
       price: "Rp450.000,00 /tim (Putra)\nRp400.000,00 /tim (Putri)",
       imageSrc: "/Cerdascermat.svg",
       bgColor: "#0A3981",
+      route: "karya-tulis-ilmiah"
     },
   ];
 
@@ -70,6 +76,7 @@ const Competition = () => {
               price={competition.price}
               imageSrc={competition.imageSrc}
               bgColor={competition.bgColor}
+              route={competition.route}
             />
           ))}
         </div>
