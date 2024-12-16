@@ -149,7 +149,10 @@ const CompetitionPage = () => {
                 <button
                   className="bg-black text-white px-8 py-3 rounded-lg flex flex-row justify-center items-center w-1/4"
                   type="submit"
-                  onClick={handleSubmit}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleSubmit();
+                  }}
                 >
                   Submit
                 </button>
@@ -167,14 +170,16 @@ const CompetitionPage = () => {
               >
                 #<span className="text-[#F9C84D]">Strive</span>
               </h1>
-              <h1 className="text-[#E38F49]"
+              <h1
+                className="text-[#E38F49]"
                 style={{
                   WebkitTextStroke: "1px #0A3981",
                 }}
               >
                 for
               </h1>
-              <h1 className="text-[#D4ECF8]"
+              <h1
+                className="text-[#D4ECF8]"
                 style={{
                   WebkitTextStroke: "1px #0A3981",
                 }}

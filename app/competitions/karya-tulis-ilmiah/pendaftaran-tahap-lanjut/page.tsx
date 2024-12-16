@@ -127,7 +127,7 @@ const CompetitionPage = () => {
                         <input
                           type="text"
                           name="anggota3"
-                          className="px-2 py-1 border border-black rounded-lg w-[98%] lg:py-2 lg:w-[99%]" 
+                          className="px-2 py-1 border border-black rounded-lg w-[98%] lg:py-2 lg:w-[99%]"
                         />
                       </div>
                     </div>
@@ -264,12 +264,17 @@ const CompetitionPage = () => {
                   {step === 1 ? (
                     <button
                       className="bg-black text-white px-8 py-2 rounded-lg flex flex-row justify-center items-center"
-                      onClick={handleSubmit}
-                      type="submit"
+                      onClick={() => {
+                        handleSubmit();
+                        router.push(
+                          "/competitions/karya-tulis-ilmiah/pendaftaran-tahap-lanjut/konfirmasi"
+                        );
+                      }}
+                      type="button"
                     >
                       Submit
                     </button>
-                  ): null}
+                  ) : null}
 
                   {step == 0 ? (
                     <button
@@ -277,7 +282,7 @@ const CompetitionPage = () => {
                       onClick={nextStep}
                       type="button"
                     >
-                      Next 
+                      Next
                     </button>
                   ) : null}
                 </div>

@@ -1,11 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import BackButton from "@/app/components/BackButton";
 
 const ConfirmationPage = () => {
+  const [paymentMethod, setPaymentMethod] = useState("");
+
   return (
     <>
-      <div className="mx-8 mt-5">
+      <div className="mx-8 mt-5 lg:mx-28">
         <BackButton></BackButton>
         <form action="" className="mt-5 w-full flex flex-col gap-6">
           <h1 className="text-2xl font-bold">Konfirmasi Pembayaran</h1>
@@ -41,20 +43,27 @@ const ConfirmationPage = () => {
               <p>(Price)</p>
             </div>
             <div className="w-full flex flex-col gap-1">
-              <label htmlFor="">Metode Pembayaran*</label>
+              <label htmlFor="paymentMethod">Metode Pembayaran*</label>
               <select
-                name=""
-                id=""
+                name="paymentMethod"
+                id="paymentMethod"
                 className="w-2/3 px-2 py-2 rounded-lg border border-black"
+                defaultValue=""
+                onChange={(e) => setPaymentMethod(e.target.value)}
               >
-                <option value="Pepek">MANDIRI</option>
+                <option value="" disabled>
+                  -
+                </option>
+                <option value="MANDIRI">MANDIRI</option>
               </select>
             </div>
-          </div>
-          <div className="w-full flex flex-col items-start">
-            <p>Nomor Rekening:</p>
-            <p className="text-xl font-bold">1420021866396</p>
-            <p>(ARIKA TRI WULANDARI)</p>
+            {paymentMethod === "MANDIRI" && (
+              <div className="w-full flex flex-col items-start">
+                <p>Nomor Rekening:</p>
+                <p className="text-xl font-bold">1420021866396</p>
+                <p>(ARIKA TRI WULANDARI)</p>
+              </div>
+            )}
           </div>
           <div className="w-full flex flex-col items-start">
             <div className="flex flex-col w-full gap-1">
