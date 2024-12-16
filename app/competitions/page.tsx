@@ -24,7 +24,7 @@ const Competition = () => {
         "Rp70.000,00 /orang (Gelombang 1)\n Rp85.000,00 /orang (Gelombang 2)\n Rp100.000,00 /orang (Gelombang 3)",
       imageSrc: "/Tryout.svg",
       bgColor: "#1F519A",
-      route: "karya-tulis-ilmiah"
+      route: "try-out"
     },
     {
       title: "Mobile Legends",
