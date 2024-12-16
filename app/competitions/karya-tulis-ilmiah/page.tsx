@@ -95,7 +95,7 @@ const karyatulisilmiah = () => {
             </p>
           </div>
           <div className="w-full">
-            <h1 className="font-winter uppercase text-2xl">sub tema</h1>
+            <h1 className="font-winter uppercase text-2xl">sub-tema</h1>
             <div className="w-full flex flex-row justify-between lg:justify-start lg:gap-5">
               <div>
                 <p>Lingkup Sains dan Teknologi:</p>
@@ -128,8 +128,8 @@ const karyatulisilmiah = () => {
               <li className="text-wrap">
                 Peserta merupakan siswa/i SMA atau SMK sederajat dari kelas X,
                 XI, dan XII se-Jawa Timur, yang masih <b>AKTIF</b> dengan
-                dibuktikan dengan scan Kartu Pelajar atau Surat Keterangan
-                Pelajar dari Kepala Sekolah yang bersangkutan
+                dibuktikan dengan <i>scan</i> Kartu Pelajar atau Surat
+                Keterangan Pelajar dari Kepala Sekolah yang bersangkutan
               </li>
               <li className="text-wrap">
                 Satu tim terdiri dari maksimal 3 orang pelajar SMA/SMK/MA
@@ -158,7 +158,6 @@ const karyatulisilmiah = () => {
             </ol>
           </div>
         </div>
-        {/*  */}
         {/* Ketentuan Pendaftaran Tahap Awal (Abstrak) */}
         <div className="w-full flex flex-col mt-5 gap-1">
           <h1 className="text-2xl font-winter uppercase">
@@ -176,13 +175,14 @@ const karyatulisilmiah = () => {
               <ul className="list-disc pl-4">
                 <li>Abstrak</li>
                 <li>
-                  Surat Pernyataan Pendaftaran yang dapat diakses melalui link
+                  Surat Pernyataan Pendaftaran yang dapat diakses melalui{" "}
+                  <i>link </i>
                   berikut:
                 </li>
               </ul>
               <div className="flex flex-col justify-center items-start w-[85%] gap-2">
                 <button
-                  className="px-5 py-2 border border-black bg-white rounded-full"
+                  className="px-4 py-1 border border-black bg-white rounded-md m-1"
                   onClick={() =>
                     window.open(
                       "https://docs.google.com/document/d/1FJWrUerRRN2iHgJcsy20xSbkw75FQ5go4EUwtyvMzVA/edit?tab=t.0",
@@ -192,28 +192,25 @@ const karyatulisilmiah = () => {
                 >
                   Surat Pernyataan Pendaftaran
                 </button>{" "}
-                {/* <button className="px-5 py-2 bg-white rounded-full border border-black">
-                  Surat Pernyataan Orisinalitas
-                </button> */}
               </div>
               <ul className="list-disc pl-4">
                 <li>
-                  Scan Kartu Pelajar setiap peserta atau Surat Keterangan dari
-                  Kepala Sekolah apabila calon peserta kompetisi tidak dapat
-                  mengirimkan Kartu Pelajar
+                  <i>Scan</i> Kartu Pelajar setiap peserta atau Surat Keterangan
+                  dari Kepala Sekolah apabila calon peserta kompetisi tidak
+                  dapat mengirimkan Kartu Pelajar
                 </li>
               </ul>
               <li className="text-wrap">
                 Berkas sebagaimana dimaksud dalam poin 1 dikirimkan dalam format
-                PDF melalui formulir Pendaftaran AIRCON yang dapat dilakukan
-                melalui website
+                PDF melalui formulir pendaftaran yang dapat dilakukan melalui
+                website Aircon 2.0
               </li>
               <li className="text-wrap">
                 Setelah mengirim berkas pendaftaran, ketua tim wajib melakukan
-                konfirmasi kepada CP: 081394358165 (Fajri) maksimal H+1 setelah
+                konfirmasi kepada CP : 081394358165 (Fajri) maksimal H+1 setelah
                 melakukan pendaftaran dengan format “Konfirmasi Pendaftaran_Nama
-                Sekolah_Nama Tim (tokoh Pahlawan)_Nama Ketua Tim” paling lambat
-                pada tanggal 3 Januari 2025 pukul 21.00 WIB. Contoh: Konfirmasi
+                Sekolah_Nama Tim (Tokoh Pahlawan)_Nama Ketua Tim” paling lambat
+                pada tanggal 3 Januari 2025 pukul 21:00 WIB. Contoh: Konfirmasi
                 Pendaftaran_Soemitro Djojohadikoesoemo_SMA Trimurti_Amira
                 Dinniah
               </li>
@@ -225,11 +222,11 @@ const karyatulisilmiah = () => {
             </ol>
           </div>
         </div>
-        {/*  */}
         {/* Ketentuan Pendaftaran Tahap Lanjut (Full Paper) */}
         <div className="w-full flex flex-col mt-5 gap-1">
           <h1 className="text-2xl font-winter uppercase">
-            Ketentuan Pendaftaran TAHAP selanjutnya <br /> (FULL PAPER)
+            Ketentuan Pendaftaran Tahap Selanjutnya <br className="lg:hidden" />{" "}
+            (Full Paper):
           </h1>
           <div className="flex flex-col w-full gap-1">
             <ol
@@ -239,19 +236,13 @@ const karyatulisilmiah = () => {
               <li className="text-wrap">
                 Tim yang lolos seleksi abstrak dapat mengembangkan karya tulis
                 ilmiah penuh sesuai dengan panduan yang diberikan oleh panitia,
-                dilanjutkan pengumpulan karya (paper) beserta surat pernyataan
-                orisinalitas. Surat Pernyataan Orisinalitas dapat diunduh
-                melalui link berikut:
+                dilanjutkan pengumpulan karya <i>(paper)</i> beserta surat
+                pernyataan orisinalitas. Surat Pernyataan Orisinalitas dapat
+                diunduh melalui <i>link</i> berikut:
               </li>
-              <ul className="list-disc pl-4">
-                <li>
-                  Surat Pernyataan Pendaftaran yang dapat diakses melalui link
-                  berikut:
-                </li>
-              </ul>
               <div className="flex flex-col justify-center items-start w-[85%] gap-2">
                 <button
-                  className="px-5 py-2 border border-black bg-white rounded-full"
+                  className="px-4 py-1 border border-black bg-white rounded-md"
                   onClick={() =>
                     window.open(
                       "https://bit.ly/SuratPernyataanKeaslianKaryaLKTIAircon2024",
@@ -261,8 +252,13 @@ const karyatulisilmiah = () => {
                 >
                   Surat Keaslian Karya
                 </button>{" "}
+                <ul className="list-disc pl-4">
+                  <li>
+                    Lembar Pengesahan dapat diunduh melalui <i>link</i> berikut:
+                  </li>
+                </ul>
                 <button
-                  className="px-5 py-2 bg-white rounded-full border border-black"
+                  className="px-4 py-1 bg-white rounded-md border border-black"
                   onClick={() =>
                     window.open(
                       "https://bit.ly/LembarPengesahanLKTIAircon2024",
@@ -277,16 +273,20 @@ const karyatulisilmiah = () => {
                 Setiap tim diperkenankan membayar biaya pendaftaran sebesar:
               </li>
               <ol className="list-disc pl-4">
-                <li>Rp100.000,- untuk Gelombang 1 (9 - 15 Januari 2025)</li>
-                <li>Rp125.000,- untuk Gelombang 2 (16 - 22 Januari 2025)</li>
-                <li>Rp150.000,- untuk Gelombang 3 (23 - 29 Januari 2025)</li>
+                <li>Rp125.000,- untuk Gelombang 1 (9 - 17 Januari 2025)</li>
+                <li>Rp150.000,- untuk Gelombang 2 (18 - 26 Februari 2025)</li>
                 <li>
-                  Untuk mengikuti tahap berikutnya. Biaya dapat dikirim melalui
-                  : MANDIRI: 1420021866396 A.N. ARIKA TRI WULANDARI Apabila
-                  terjadi ekstensi, tanggal dan biaya pendaftaran akan
+                  Untuk mengikuti tahap berikutnya. Biaya dapat dikirim melalui:
+                  MANDIRI: 1420021866396 A.N. ARIKA TRI WULANDARI
+                </li>
+                <li>
+                  Apabila terjadi ekstensi, tanggal dan biaya pendaftaran akan
                   diinformasikan berikutnya pada laman media sosial Airlangga
-                  Convention. Bukti transfer dengan format “Nama Sekolah_Nama
-                  Tim (tokoh Pahlawan)_Nama Ketua Tim”
+                  Convention 2.0
+                </li>
+                <li>
+                  Bukti transfer dengan format “Nama Sekolah_Nama Tim (tokoh
+                  Pahlawan)_Nama Ketua Tim”
                 </li>
               </ol>
               <li className="text-wrap">
@@ -294,13 +294,13 @@ const karyatulisilmiah = () => {
                 format PDF
               </li>
               <li>
-                Dari tim yang mengirimkan full paper, 10 tim terbaik akan
+                Dari tim yang mengirimkan <i>full paper</i>, 10 tim terbaik akan
                 dipilih sebagai finalis
               </li>
               <li>
                 Apabila peserta telah melakukan pembayaran dan pendaftaran ulang
-                pada tahap full paper, maka pembayaran tidak dapat ditarik
-                kembali
+                pada tahap <i>full paper</i>, maka pembayaran tidak dapat
+                ditarik kembali
               </li>
               <li>
                 Apabila terdapat tim yang telah melakukan pendaftaran tetapi
@@ -311,7 +311,6 @@ const karyatulisilmiah = () => {
           </div>
         </div>
       </div>
-      {/*  */}
       {/* Click to Download Full Guide Book */}
       <div className="w-full flex flex-row justify-between items-center text-center mt-8 mb-2">
         <div className="w-1/3 py-[0.05rem] bg-black lg:w-full"></div>
@@ -323,7 +322,6 @@ const karyatulisilmiah = () => {
         </a>
         <div className="w-1/3 py-[0.05rem] bg-black lg:w-full"></div>
       </div>
-      {/*  */}
       {/* Pengumuman Lolos Tahap Abstrak */}
       <div className="mx-10 mt-8 mb-2">
         <div className="w-full flex flex-col justify-center items-center gap-5">
