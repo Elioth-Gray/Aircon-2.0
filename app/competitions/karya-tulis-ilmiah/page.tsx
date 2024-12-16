@@ -16,10 +16,9 @@ const karyatulisilmiah = () => {
     <>
       <div className="mx-10 mt-5 lg:mx-28">
         <BackButton />
-        {/*  */}
         {/* Card */}
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-10 lg:mt-3">
-          <div className="flex flex-col justify-between items-start text-start gap-3 bg-[#1F519A] p-6 px-8 text-white rounded-xl relative overflow-clip w-full h-full mt-8 lg:col-span-1">
+          <div className="flex flex-col justify-between items-start text-start gap-1 bg-[#1F519A] p-6 px-8 text-white rounded-xl relative overflow-clip w-full h-full mt-8 lg:col-span-1">
             <div className="p-3 rounded-full bg-[#D9D9D9]">
               <BookOpenText size={35} className="text-black" />
             </div>
@@ -28,7 +27,7 @@ const karyatulisilmiah = () => {
               width={200}
               height={200}
               alt="KTI"
-              className="absolute bottom-32 left-80"
+              className="absolute bottom-32 left-52 lg:left-80"
             ></Image>
             <h1 className="font-winter mt-5 text-2xl w-3/4 text-wrap">
               Karya Tulis Ilmiah

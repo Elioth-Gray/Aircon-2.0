@@ -48,7 +48,7 @@ const Home = () => {
           width={200}
           height={200}
           alt="competition"
-          className=" absolute top-44 -right-6 -z-50"
+          className="absolute top-44 -right-6 -z-50"
         />
         <div className="mx-10 mt-3">
           <div className="flex flex-row gap-5 w-full mb-2">
@@ -82,23 +82,29 @@ const Home = () => {
 
         <div className="mx-10 mt-5 flex flex-col gap-5">
           {/* About Us: */}
-          <div className="w-full bg-[#0A3981] px-8 py-8 rounded-3xl flex flex-row justify-between">
-            <div className="flex flex-col gap-5">
-              <div className="">
-                <h1 className="uppercase text-[#D4ECF8] text-2xl py-2 font-winter">
-                  {desc.aboutUs.title}
-                </h1>
-                <p className="text-sm text-white">{desc.aboutUs.desc}</p>
+          <div className="flex flex-col gap-5">
+            <div className="w-full bg-[#0A3981] px-8 py-8 rounded-3xl justify-between">
+              <div className="flex flex-row">
+                <div className="flex flex-col">
+                  <div>
+                    <h1 className="uppercase text-[#D4ECF8] text-2xl py-2 font-winter">
+                      {desc.aboutUs.title}
+                    </h1>
+                    <p className="text-sm text-white">{desc.aboutUs.desc}</p>
+                  </div>
+                  <div className="w-full bg-[#0A3981]rounded-3xl justify-between mt-4">
+                    <ReadMoreButton url={desc.aboutUs.url} width="80%" />
+                  </div>
+                </div>
+                <div className="justify-center items-center">
+                  <Image
+                    src="about-us-ornamen.svg"
+                    width={150}
+                    height={150}
+                    alt="aboutus"
+                  ></Image>
+                </div>
               </div>
-              <ReadMoreButton url={desc.aboutUs.url} width="80%" />
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <Image
-                src="about-us-ornamen.svg"
-                width={150}
-                height={150}
-                alt="aboutus"
-              ></Image>
             </div>
           </div>
 
@@ -192,11 +198,32 @@ const Home = () => {
           className=" absolute bottom-auto -left-20 -z-50 rotate-180"
         />
       </div>
+      {/* Desktop: */}
       <div className="hidden lg:block w-full px-28">
         <div className="w-full">
-          <h1 className="font-winter text-8xl w-3/4 text-wrap">
-            Airlangga Convention 2.0
-          </h1>
+          <div className="flex flex-row gap-5">
+            <div className="w-full">
+              <h1 className="font-winter text-8xl w-full text-wrap mt-10 mb-16">
+                Airlangga Convention 2.0
+              </h1>
+              <Image
+                src="dots.svg"
+                width={650}
+                height={650}
+                alt="competition"
+                className="absolute top-36 left-[5%]"
+              />
+            </div>
+            <div className="w-1/2 flex justify-center items-center pl-1">
+              <Image
+                src="bem-present.svg"
+                width={500}
+                height={500}
+                alt="competition"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
           <div className="mt-5 w-full flex flex-row gap-6 justify-center items-center h-auto">
             <div className="flex flex-col gap-6 w-[22%]">
               <div className="w-full flex flex-col justify-center items-start bg-[#0A3981] text-white p-8 rounded-[2rem] px-8 shadow-2xl">

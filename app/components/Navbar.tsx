@@ -143,7 +143,7 @@ const Navbar = () => {
                   className="text-black text-[16px] block hover:bg-white hover:text-[#B6723A] hover:font-bold rounded-lg pl-4"
                   onClick={toggleNavbar}
                 >
-                  Competition
+                  Competitions
                 </Link>
                 <Link
                   href="/supporter"

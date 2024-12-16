@@ -1,8 +1,8 @@
 "use client"; // Tambahkan "use client" jika Anda menggunakan hooks (useState) di file ini
 
 import React from "react";
-import Image from "next/image"; // Gunakan Next.js Image component
-import { FaInstagram } from "react-icons/fa"; // Gunakan react-icons
+import Image from "next/image";
+import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
@@ -28,12 +28,9 @@ const Footer = () => {
               <li>Opening Party</li>
               <li>Closing Party</li>
               <li>Supporter</li>
-              <li>Tenant</li>
-              <li>Performance</li>
               <li>Sponsor & Media Partner</li>
             </ul>
           </div>
-
           {/* Competition Section */}
           <div className="">
             <h2 className="font-bold mb-3">Competition</h2>{" "}
@@ -44,21 +41,19 @@ const Footer = () => {
               <li>Try Out</li>
               <li>Mobile Legends</li>
               <li>Business Plan</li>
-              <li>Cerdas Cermat</li>
               <li>Basket</li>
             </ul>
           </div>
-
           {/* Contact Us Section */}
         </div>
         <div>
-            <h2 className="font-bold mb-3">Contact Us</h2>{" "}
-            {/* Menambah margin bawah pada judul */}
-            <p className="flex items-center justify-center space-x-2">
-              <FaInstagram className="text-xl" />
-              <span>Instagram</span>
-            </p>
-          </div>
+          <h2 className="font-bold mb-3">Contact Us</h2>{" "}
+          {/* Menambah margin bawah pada judul */}
+          <p className="flex items-center justify-center space-x-2">
+            <FaInstagram className="text-xl" />
+            <span>Instagram</span>
+          </p>
+        </div>
         {/* Divider */}
         <div className="border-t border-white w-full mt-6"></div>{" "}
         {/* Jarak lebih kecil antara divider dan konten */}
@@ -68,38 +63,43 @@ const Footer = () => {
       </div>
       <div className="hidden lg:block w-full gap-3 mt-8 px-28">
         <div className="flex flex-row justify-between items-start gap-20">
-        <div className="">
-          <Image src="/logo-aircon-fix.png" width={200} height={200} alt="logo"></Image>
-        </div>
-        <div className="flex flex-col">
-          <div className="flex flex-row justify-start item-start gap-16">
-            <div className="text-xl">
-              <h1 className="text-xl mb-2 font-bold">About Us</h1>
-              <Link href="/about-us">Airlangga Convention 2.0</Link>
-            </div>
-            <div className="text-xl">
-              <h1 className="text-xl mb-2 font-bold">Competition</h1>
-              <div className="w-full flex flex-col justify-start items-start gap-3">
-                <Link href="/about-us">Karya Tulis Ilmiah</Link>
-                <Link href="/about-us">Infografis</Link>  
-                <Link href="/about-us">Try Out</Link>  
-                <Link href="/about-us">Business Plan</Link>
-                <Link href="/about-us">Basket</Link>        
-              </div>
-            </div>
-            <div className="text-xl">
-              <h1 className="text-xl mb-2 font-bold">Others</h1>
-              <div className="w-full flex flex-col justify-start items-start gap-3">
-                <Link href="/about-us">Opening Party</Link>
-                <Link href="/about-us">Closing Party</Link>  
-                <Link href="/about-us">Supporter</Link>  
-                <Link href="/about-us">Sponsor & Media Partner</Link>          
-              </div>
-            </div>
+          <div className="">
+            <Image
+              src="/logo-aircon-fix.png"
+              width={200}
+              height={200}
+              alt="logo"
+            ></Image>
           </div>
-          <div className="w-full bg-white py-[0.015rem] mt-20"></div>
-          <p className="mt-4 text-start">&copy; Aircon2.0</p>{" "}
-        </div>
+          <div className="flex flex-col">
+            <div className="flex flex-row justify-start item-start gap-16">
+              <div className="text-xl">
+                <h1 className="text-xl mb-2 font-bold">About Us</h1>
+                <Link href="/about-us">Airlangga Convention 2.0</Link>
+              </div>
+              <div className="text-xl">
+                <h1 className="text-xl mb-2 font-bold">Competition</h1>
+                <div className="w-full flex flex-col justify-start items-start gap-3">
+                  <Link href="/about-us">Karya Tulis Ilmiah</Link>
+                  <Link href="/about-us">Infografis</Link>
+                  <Link href="/about-us">Try Out</Link>
+                  <Link href="/about-us">Business Plan</Link>
+                  <Link href="/about-us">Basket</Link>
+                </div>
+              </div>
+              <div className="text-xl">
+                <h1 className="text-xl mb-2 font-bold">Others</h1>
+                <div className="w-full flex flex-col justify-start items-start gap-3">
+                  <Link href="/about-us">Opening Party</Link>
+                  <Link href="/about-us">Closing Party</Link>
+                  <Link href="/about-us">Supporter</Link>
+                  <Link href="/about-us">Sponsor & Media Partner</Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full bg-white py-[0.015rem] mt-20"></div>
+            <p className="mt-4 text-start">&copy; Aircon2.0</p>{" "}
+          </div>
         </div>
       </div>
     </footer>
