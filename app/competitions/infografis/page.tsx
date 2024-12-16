@@ -15,11 +15,12 @@ const karyatulisilmiah = () => {
 
   return (
     <>
+      {/* start */}
       <div className="mx-10 mt-5 lg:mx-28">
         <BackButton />
         {/* Card */}
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-10 lg:mt-3">
-          <div className="flex flex-col justify-between items-start text-start gap-3 bg-[#1F519A] p-6 px-8 text-white rounded-xl relative overflow-clip w-full h-full mt-8 lg:col-span-1">
+          <div className="flex flex-col justify-between items-start text-start gap-1 bg-[#1F519A] p-6 px-8 text-white rounded-xl relative overflow-clip w-full h-full mt-8 lg:col-span-1">
             <div className="p-3 rounded-full bg-[#D9D9D9]">
               <Newspaper size={35} className="text-black" />
             </div>
@@ -28,13 +29,13 @@ const karyatulisilmiah = () => {
               width={200}
               height={200}
               alt="KTI"
-              className="absolute bottom-32 lg:left-80 left-56"
+              className="absolute bottom-32 left-52 lg:left-80"
             ></Image>
-            <h1 className="font-winter mt-5 text-2xl w-3/4 text-wrap">
+            <h1 className="font-winter mt-5 text-2xl w-3/4 text-wrap lg:mt-1">
               Infografis
             </h1>
             <div>
-              <p>Biaya Pendaftaran:</p>
+              <p className="lg:mt-1">Biaya Pendaftaran:</p>
               <p>
                 Rp40.000,00 /orang (Gelombang 1) <br /> Rp50.000,00 /orang
                 (Gelombang 2)
@@ -43,9 +44,8 @@ const karyatulisilmiah = () => {
           </div>
           <div className="lg:w-full items-center lg:col-span-2">
             <h1 className="font-winter text-6 w-full text-4xl lg:mt-4">
-              Infografis
+              Lomba Infografis
             </h1>
-            {/* Sub Title */}
             <div className="w-full mt-5 flex flex-col gap-3">
               <div className="w-full flex flex-row justify-start items-center gap-2">
                 <CalendarDots size={28} />
@@ -85,7 +85,7 @@ const karyatulisilmiah = () => {
             </p>
           </div>
           <div className="w-full">
-            <h1 className="font-winter uppercase text-2xl"> sub tema</h1>
+            <h1 className="font-winter uppercase text-2xl">sub-tema</h1>
             <div className="w-full flex flex-row justify-between lg:justify-start lg:gap-5">
               <div>
                 <p>Lingkup Sains dan Teknologi:</p>
@@ -107,7 +107,7 @@ const karyatulisilmiah = () => {
           </div>
         </div>
         {/* Ketentuan Peserta */}
-        <div className="w-full flex flex-col mt-5 gap-1">
+        <div className="w-full flex flex-col mt-5 gap-1 lg:mt-10">
           <h1 className="text-2xl font-winter uppercase">Ketentuan Peserta:</h1>
           <div className="flex flex-col w-full gap-1">
             <ol
@@ -117,8 +117,8 @@ const karyatulisilmiah = () => {
               <li className="text-wrap">
                 Peserta merupakan siswa/i SMA atau SMK sederajat dari kelas X,
                 XI, dan XII se-Jawa Timur, yang masih <b>AKTIF</b> dengan
-                dibuktikan dengan scan Kartu Pelajar atau Surat Keterangan
-                Pelajar dari Kepala Sekolah yang bersangkutan
+                dibuktikan dengan <i>scan</i> Kartu Pelajar atau Surat
+                Keterangan Pelajar dari Kepala Sekolah yang bersangkutan
               </li>
               <li className="text-wrap">
                 Lomba bersifat individu dan karya bersifat orisinil dan belum
@@ -153,7 +153,7 @@ const karyatulisilmiah = () => {
             </ol>
           </div>
         </div>
-        {/* Ketentuan Pendaftaran*/}
+        {/* Ketentuan Pendaftaran Tahap Awal (Abstrak) */}
         <div className="w-full flex flex-col mt-5 gap-1">
           <h1 className="text-2xl font-winter uppercase">
             Ketentuan Pendaftaran:
@@ -163,13 +163,16 @@ const karyatulisilmiah = () => {
               <li className="text-wrap">
                 Peserta diwajibkan mengirim berkas pendaftaran sebagai berikut:{" "}
               </li>
-              <ul className="list-disc pl-4">
+              <ul
+                className="list-disc pl-4"
+                style={{ listStyleType: "lower-alpha" }}
+              >
                 <li>
                   Surat Pernyataan Orisinalitas Karya yang telah ditandatangani,
                   template surat dapat diakses melalui link berikut:
-                  <div className="flex flex-col justify-center items-start w-[85%] gap-2 py-2">
+                  <div className="flex flex-col justify-center items-start w-[85%] gap-2">
                     <button
-                      className="px-5 py-2 border border-black bg-white rounded-full"
+                      className="px-4 py-1 border border-black bg-white rounded-md m-1"
                       onClick={() =>
                         window.open(
                           "https://bit.ly/SuratPernyataanOrisinalitasPOSTERAircon2024",
@@ -195,7 +198,8 @@ const karyatulisilmiah = () => {
               </li>
               <li className="text-wrap">
                 Berkas sebagaimana dimaksud dalam poin 1 dikirimkan melalui
-                formulir Pendaftaran AIRCON yang dapat dilakukan melalui website
+                formulir pendaftaran yang dapat dilakukan melalui website Aircon
+                2.0
               </li>
               <li className="text-wrap">
                 Setelah mengirim berkas pendaftaran dan melakukan pembayaran,
@@ -209,7 +213,7 @@ const karyatulisilmiah = () => {
               </li>
               <li>
                 Biaya yang telah dibayarkan tidak dapat dikembalikan dengan
-                alasan apapun
+                alasan Apapun
               </li>
               <li>
                 Penyelenggara lomba tidak akan menerima karya yang dikirim
@@ -227,7 +231,7 @@ const karyatulisilmiah = () => {
             </ol>
           </div>
         </div>
-        {/* Ketentuan Poster */}
+        {/* Ketentuan Pendaftaran Tahap Lanjut (Full Paper) */}
         <div className="w-full flex flex-col mt-5 gap-1">
           <h1 className="text-2xl font-winter uppercase">
             Ketentuan Infografis:
@@ -240,8 +244,8 @@ const karyatulisilmiah = () => {
                 etika pembuatan karya cipta (bukan plagiasi)
               </li>
               <li>Jumlah poster 1 (satu) lembar</li>
-              <li>Format karya poster:</li>
-              <ul
+              <li className="text-wrap">Format karya poster:</li>
+              <ol
                 className="list-disc pl-4"
                 style={{ listStyleType: "lower-alpha" }}
               >
@@ -273,22 +277,22 @@ const karyatulisilmiah = () => {
                 <li>
                   Pada poster wajib mencantumkan logo AIRCON, BEM Universitas
                   Airlangga, dan Universitas Airlangga yang dapat diunduh pada:
-                  <div className="flex flex-col justify-center items-start w-[85%] gap-2 py-2">
-                    <button
-                      className="px-5 py-2 border border-black bg-white rounded-lg"
-                      onClick={() =>
-                        window.open("https://l1nk.dev/LOGOPOSTER", "_blank")
-                      }
-                    >
-                      Logo Poster
-                    </button>{" "}
-                  </div>
                 </li>
+                <div className="flex flex-col justify-center items-start w-[85%] gap-2">
+                  <button
+                    className="px-4 py-1 border border-black bg-white rounded-md m-1"
+                    onClick={() =>
+                      window.open("https://l1nk.dev/LOGOPOSTER", "_blank")
+                    }
+                  >
+                    Logo Poster
+                  </button>{" "}
+                </div>
                 <li>
                   Tidak diperbolehkan mencantumkan nama peserta, instansi, dan
                   logo asal instansi peserta
                 </li>
-              </ul>
+              </ol>
             </ol>
           </div>
         </div>
@@ -298,44 +302,43 @@ const karyatulisilmiah = () => {
           </h1>
           <div className="flex flex-col w-full gap-1">
             <ol className="list-decimal pl-5 flex flex-col gap-1">
-              <li>
+              <li className="text-wrap">
                 Pendaftaran karya berlangsung dengan rincian sebagai berikut:
               </li>
-              <ul
+              <ol
                 className="list-disc pl-4"
                 style={{ listStyleType: "lower-alpha" }}
               >
                 <li>Gelombang I: 16 - 30 Desember 2024</li>
                 <li>Gelombang II: 31 Desember - 6 Januari 2025</li>
-              </ul>
-              <li>Pengisian formulir melalui website</li>
+              </ol>
               <li>
+                Pengisian formulir melalui Website Airlangga Convention 2.0
+              </li>
+              <li className="text-wrap">
                 Biaya pendaftaran peserta Lomba Poster AIRCON 2024 sebesar:
               </li>
-              <ul
+              <ol
                 className="list-disc pl-4"
                 style={{ listStyleType: "lower-alpha" }}
               >
                 <li>Gelombang I: Rp40.000</li>
                 <li>Gelombang II: Rp50.000</li>
-              </ul>
+              </ol>
               <li>Biaya pendaftaran dibayarkan via transfer melalui:</li>
-              <ul
+              <ol
                 className="list-disc pl-4"
                 style={{ listStyleType: "lower-alpha" }}
               >
-                <li>
-                  MANDIRI: 1420021866396 <br /> (ARIKA TRI WULANDARI)
-                </li>
-              </ul>
+                <li>BANK: MANDIRI: 1420021866396 A.N. ARIKA TRI WULANDARI</li>
+              </ol>
               <li>
                 Setiap peserta wajib melakukan konfirmasi dan mengirim bukti
-                transfer dan tangkapan layar sudah mengirim form kepada <br />{" "}
-                <a href="https://wa.me/6281996716532">0819-9671-6532</a> (Arika)
-                dengan format “Konfirmasi Pendaftaran_Nama Lengkap Peserta_Asal
-                Sekolah” paling lambat jam 23.59 sesuai dengan ketentuan
-                timeline yang tertera. Contoh: Konfirmasi Pendaftaran_Nama
-                Lengkap_Asal Sekolah
+                transfer dan tangkapan layar sudah mengirim form kepada
+                https://wa.me/6281996716532 (Arika) dengan format “Konfirmasi
+                Pendaftaran_Nama Lengkap Peserta_Asal Sekolah” paling lambat jam
+                23.59 sesuai dengan ketentuan timeline yang tertera. Contoh:
+                Konfirmasi Pendaftaran_Nama Lengkap_Asal Sekolah
               </li>
               <li>
                 Karya diserahkan paling lambat 12 Januari 2025 pukul 23.59 WIB
@@ -355,15 +358,15 @@ const karyatulisilmiah = () => {
         </a>
         <div className="w-1/3 py-[0.05rem] bg-black lg:w-full"></div>
       </div>
-      {/* Pengumuman Lolos Tahap Abstrak */}
+      {/* Pengumuman Top 10 Poster Infografis */}
       <div className="mx-10 mt-8 mb-2">
         <div className="w-full flex flex-col justify-center items-center gap-5">
           <h1 className="font-winter text-xl w-3/4 text-wrap text-center">
-            PENGUMUMAN TOP 10 POSTER INFOGRAFIS AIRCON 2.0
+            Pengumuman Top 10 Poster Infografis Aircon 2.0
           </h1>
           <p className="text-sm text-center">
-            Selamat! kepada peserta yang lolos, selanjutnya akan memasuki Tahap
-            Presentasi Final
+            Selamat! kepada peserta yang lolos, selanjutnya akan memasuki{" "}
+            <b>Tahap Presentasi Final</b>
           </p>
           <button
             className="py-2 px-4 rounded-lg text-sm bg-white shadow-lg"
@@ -377,7 +380,7 @@ const karyatulisilmiah = () => {
             Cek Di Sini
           </button>
           <p className="text-sm text-center">
-            Tetap semangat untuk semua peserta! Bagi yang belum lolos, jangan
+            TTetap semangat untuk semua peserta! Bagi yang belum lolos, jangan
             berkecil hati. Kesempatan lain masih terbuka lebar! Airlangga 2.0
             #StriveforExcellence
           </p>

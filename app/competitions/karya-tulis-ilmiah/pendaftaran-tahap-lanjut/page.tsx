@@ -91,7 +91,7 @@ const CompetitionPage = () => {
                         />
                       </div>
                       <div className="flex flex-col w-1/2 gap-1">
-                        <label htmlFor="email">Email *</label>
+                        <label htmlFor="email">Email*</label>
                         <input
                           type="text"
                           name="email"
@@ -134,7 +134,7 @@ const CompetitionPage = () => {
                     <div className="w-full flex flex-row justify-between gap-2">
                       <div className="flex flex-col w-full gap-1">
                         <label htmlFor="ktpFile">
-                          Scan KTP/ Kartu Pelajar (PDF/gambar)* <br /> Note:
+                          Scan KTP/Kartu Pelajar (PDF/gambar)* <br /> Note:
                           Jadikan satu file (size limit 5 MB)
                         </label>
                         <input
@@ -189,8 +189,8 @@ const CompetitionPage = () => {
                     <div className="w-full flex flex-row justify-between gap-2">
                       <div className="flex flex-col w-full gap-1">
                         <label htmlFor="ktpFile">
-                          File Full Paper* <br /> Note: Format PDF, Size Limit
-                          10 MB
+                          File Full Paper* <br /> Note: Format PDF (size limit
+                          10 MB)
                         </label>
                         <input
                           type="file"
@@ -211,7 +211,7 @@ const CompetitionPage = () => {
                       <div className="flex flex-col w-full gap-1">
                         <label htmlFor="suratPernyataanPendaftaran">
                           Surat Pernyataan Pendaftaran* <br /> Note: Format PDF,
-                          Size Limit 5 MB
+                          (size limit 5 MB)
                         </label>
                         <input
                           type="file"
@@ -231,8 +231,8 @@ const CompetitionPage = () => {
                     <div className="w-full flex flex-row justify-between gap-2">
                       <div className="flex flex-col w-full gap-1">
                         <label htmlFor="suratPernyataanOrisinalitas">
-                          Surat Pernyataan Orisinalitas* <br /> Note: Format
-                          PDF, Size Limit 5 MB
+                          Surat Pernyataan Orisinalitas* <br /> Note: Format PDF
+                          (size limit 5 MB)
                         </label>
                         <input
                           type="file"
