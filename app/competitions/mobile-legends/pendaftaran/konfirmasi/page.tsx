@@ -3,11 +3,10 @@ import React, { useState } from "react";
 import BackButton from "@/app/components/BackButton";
 
 const ConfirmationPage = () => {
-  const [paymentMethod, setPaymentMethod] = useState<string>("");
+  const [paymentMethod, setPaymentMethod] = useState("");
 
   return (
     <>
-      {/* Start */}
       <div className="mx-8 mt-5 lg:mx-28">
         <BackButton></BackButton>
         <div className="flex flex-col lg:flex-row lg:gap-10">
@@ -33,7 +32,7 @@ const ConfirmationPage = () => {
                   <p className="flex flex-row justify-between items-center w-[38%]">
                     <span>Cabang Lomba</span> <span>:</span>
                   </p>
-                  <p>Basket</p>
+                  <p>Mobile Legends</p>
                 </div>
                 <div className="flex flex-row start items-center gap-6">
                   <p className="flex flex-row justify-between items-center w-[38%]">
@@ -66,7 +65,7 @@ const ConfirmationPage = () => {
                   <div className="w-full flex flex-col items-start gap-2 mt-2">
                     <p>Nomor Rekening:</p>
                     <p className="text-xl font-bold">1817403392</p>
-                    <p>(Shakila Az Zahra )</p>
+                    <p>(Shakila Az Zahra)</p>
                   </div>
                 )}
               </div>
@@ -104,7 +103,7 @@ const ConfirmationPage = () => {
                   e.preventDefault();
                   try {
                     window.location.href =
-                      "/competitions/basket/pendaftaran/konfirmasi/reminder";
+                      "/competitions/mobile-legends/pendaftaran/konfirmasi/reminder";
                   } catch (error) {
                     console.error("Navigation error:", error);
                   }

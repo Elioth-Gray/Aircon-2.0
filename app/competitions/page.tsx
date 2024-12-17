@@ -28,7 +28,7 @@ const Competition = () => {
     },
     {
       title: "Mobile Legends",
-      price: "Rpxx.000,00 /tim",
+      price: "Rp85.000,00 /tim",
       imageSrc: "/ML.svg",
       bgColor: "#0A3981",
       route: "mobile-legends",

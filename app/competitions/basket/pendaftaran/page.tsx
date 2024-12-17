@@ -8,6 +8,7 @@ import BackButton from "@/app/components/BackButton";
 const CompetitionPage = () => {
   const [step, setStep] = useState(0);
   const router = useRouter();
+  const [jumlahPemain, setJumlahPemain] = useState(7);
 
   const nextStep = () => {
     if (step < 1) {
@@ -104,6 +105,54 @@ const CompetitionPage = () => {
                 </div>
                 <div className="w-full flex flex-row justify-between gap-2">
                   <div className="flex flex-col w-full gap-1">
+                    <label htmlFor="jumlahPemain">Jumlah Pemain*</label>
+                    <select
+                      name="jumlahPemain"
+                      className="px-2 py-1 border border-black rounded-lg w-[98%]"
+                      value={jumlahPemain || ""}
+                      onChange={(e) => setJumlahPemain(Number(e.target.value))}
+                    >
+                      <option value="" disabled>
+                        -
+                      </option>
+                      {[7, 8, 9, 10, 11, 12].map((num) => (
+                        <option key={num} value={num}>
+                          {num}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+                {jumlahPemain > 0 &&
+                  [...Array(jumlahPemain)].map((_, index) => (
+                    <div
+                      key={index}
+                      className="w-full flex flex-row justify-between gap-2"
+                    >
+                      <div className="flex flex-col w-1/2 gap-1">
+                        <label htmlFor={`namaPemain${index + 1}`}>
+                          Nama Lengkap Pemain {index + 1}*
+                        </label>
+                        <input
+                          type="text"
+                          name={`namaPemain${index + 1}`}
+                          className="px-2 py-1 border border-black rounded-lg w-[98%]"
+                        />
+                      </div>
+                      <div className="flex flex-col w-1/2 gap-1">
+                        <label htmlFor={`nomorPunggung${index + 1}`}>
+                          Nomor Punggung Pemain {index + 1}*
+                        </label>
+                        <input
+                          type="text"
+                          name={`nomorPunggung${index + 1}`}
+                          className="px-2 py-1 border border-black rounded-lg w-[98%]"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                <div className="w-full flex flex-row justify-between gap-2">
+                  <div className="flex flex-col w-full gap-1">
                     <label htmlFor="ktpFile">
                       Scan KTP/Kartu Pelajar (PDF/gambar)* <br /> Note: Jadikan
                       satu file
@@ -125,7 +174,6 @@ const CompetitionPage = () => {
                 </div>
               </>
             ) : null}
-
             {step === 1 ? (
               <>
                 <h1 className="font-winter text-2xl -mb-7 mt-2">
@@ -167,6 +215,26 @@ const CompetitionPage = () => {
                     <label htmlFor="ktpFile">
                       Kartu Identitas Tiap Official <br />
                       (KTP/Kartu Pelajar)* <br /> Note: Jadikan dalam 1 file
+                    </label>
+                    <input
+                      type="file"
+                      name="abstrakFile"
+                      className="px-4 py-8 border border-black rounded-lg w-[98%] bg-white"
+                      accept=".pdf"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file && file.size > 10 * 1024 * 1024) {
+                          alert("File size exceeds 10 MB");
+                          e.target.value = "";
+                        }
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="w-full flex flex-row justify-between gap-2">
+                  <div className="flex flex-col w-full gap-1">
+                    <label htmlFor="ktpFile">
+                      Screenshot Share Poster Aircon*
                     </label>
                     <input
                       type="file"
