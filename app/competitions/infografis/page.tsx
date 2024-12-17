@@ -15,7 +15,6 @@ const karyatulisilmiah = () => {
 
   return (
     <>
-      {/* start */}
       <div className="mx-10 mt-5 lg:mx-28">
         <BackButton />
         {/* Card */}
