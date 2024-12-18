@@ -4,7 +4,6 @@ import BackButton from "@/app/components/BackButton";
 const ConfirmationPage = () => {
   return (
     <>
-      {/* Start */}
       <div className="mx-8 mt-5 lg:mx-28">
         <BackButton></BackButton>
         <div className="mt-8 w-full flex flex-col h-auto gap-2 mb-60">
@@ -20,12 +19,12 @@ const ConfirmationPage = () => {
               Selanjutnya bisa langsung <b>konfirmasi pembayaran</b> ke{" "}
               <br className="lg:hidden" />
               <a
-                href="https://wa.me/6287818043080"
+                href="https://wa.me/628785560-1664"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                0878-1804-3080 (Delaila)
+                0878-5560-1664 (Fandi)
               </a>
             </p>
           </div>
