@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { List } from "@phosphor-icons/react";
@@ -29,28 +30,24 @@ const Navbar = () => {
       >
         <div className="mx-auto px-10 sm:px-6 lg:mx-28 lg:px-0">
           <div className="flex flex-row items-center justify-between w-full">
-            {/* Logo di sebelah kiri */}
             <div className="flex-shrink-0 flex items-center py-2 focus:bg-none">
-              {/* Menambahkan padding vertical */}
               <Link href="/" className="text-black">
-                {/* Gambar logo di sebelah kiri navbar */}
                 <Image
-                  src="/logo-aircon-fix.png" // Path gambar logo relatif dari folder public
+                  src="/logo-aircon-fix.png"
                   alt="logo"
-                  width={150} // Lebar gambar logo lebih kecil
-                  height={150} // Tinggi gambar logo lebih kecil
-                  className="object-contain lg:hidden" // Menjaga proporsi gambar
+                  width={150}
+                  height={150}
+                  className="object-contain lg:hidden"
                 />
                 <Image
-                  src="/logo-aircon-fix.png" // Path gambar logo relatif dari folder public
+                  src="/logo-aircon-fix.png"
                   alt="logo"
-                  width={180} // Lebar gambar logo lebih kecil
-                  height={180} // Tinggi gambar logo lebih kecil
-                  className="object-contain hidden lg:block" // Menjaga proporsi gambar
+                  width={180}
+                  height={180}
+                  className="object-contain hidden lg:block"
                 />
               </Link>
             </div>
-            {/* Navbar Links on Desktop */}
             <div className="hidden lg:flex flex-row justify-center items-center gap-14 transition-all">
               <Link
                 href="/"
@@ -88,15 +85,14 @@ const Navbar = () => {
                 <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#B6723A] transition-all duration-300 ease-in-out group-hover:w-full"></span>
               </Link>
             </div>
-
-            {/* Navbar Toggler (Hamburger Menu) */}
+            {/* Navbar Toggler (Hamburger Menu): */}
             <div className="lg:hidden flex items-center ml-auto">
               <button
                 className="flex-col items-center justify-center p-1 py-3 rounded-lg text-black bg-white border border-black"
                 onClick={toggleNavbar}
                 style={{
-                  width: "50px", // Lebar toggle lebih kecil
-                  zIndex: 10, // Agar toggle berada di atas elemen lainnya
+                  width: "50px",
+                  zIndex: 10,
                 }}
               >
                 <List className="text-black w-full" size={20} />
@@ -118,10 +114,6 @@ const Navbar = () => {
         {/* Navbar on Mobile */}
         {isClick && (
           <>
-            <div
-              className="fixed inset-0 bg-black opacity-0 z-10"
-              onClick={toggleNavbar}
-            ></div>
             <div className="lg:hidden bg-white w-full mt-3 z-50 min-h-screen fixed left-0 overflow-y-auto">
               <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white rounded-lg flex flex-col gap-3">
                 <Link

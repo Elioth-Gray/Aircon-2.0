@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { BookOpenText } from "@phosphor-icons/react/dist/ssr";
@@ -13,17 +13,15 @@ const CompetitionCard = ({
   price,
   imageSrc,
   bgColor = "#1F519A",
-  route
+  route,
 }: {
   title: string;
-  price: string;
+  price: React.ReactNode;
   imageSrc: string;
   bgColor?: string;
   route: String;
 }) => {
-
   const router = useRouter();
-
 
   const getIcon = (title: string) => {
     if (title.toLowerCase().includes("karya tulis ilmiah")) {
@@ -45,17 +43,21 @@ const CompetitionCard = ({
 
   return (
     <div
-      className={`flex flex-col justify-between items-start text-start gap-3 p-6 px-8 text-white rounded-xl relative overflow-hidden w-full bg-[${bgColor}] lg:w-full lg:py-14 cursor-pointer hover:bg-[#B6723A] transition-all ease-in-out hover:shadow-2xl`}
-     onClick={() => {router.push(`/competitions/${route}`)}}>
+      className={`flex flex-col justify-between items-start text-start gap-3 p-6 px-8 text-white 
+        rounded-xl relative overflow-hidden w-full bg-[${bgColor}] lg:w-full lg:py-10 cursor-pointer hover:bg-[#B6723A] transition-all ease-in-out hover:shadow-2xl`}
+      onClick={() => {
+        router.push(`/competitions/${route}`);
+      }}
+    >
       <div className="p-3 rounded-full bg-[#D9D9D9]">{getIcon(title)}</div>
       <Image
         src={imageSrc}
-        width={200}
-        height={200}
+        width={150}
+        height={150}
         alt={title}
-        className="absolute bottom-28 left-56 lg:left-[21rem] lg:bottom-40"
+        className="absolute bottom-36 left-56 lg:left-[18rem] lg:bottom-31 lg:w-64 lg:h-64"
       />
-      <h1 className="text-2xl w-3/4 font-winter">{title}</h1>
+      <h1 className="text-2xl w-3/4 font-winter mt-3">{title}</h1>
       <div>
         <p>Biaya Pendaftaran:</p>
         <p>{price}</p>

@@ -1,104 +1,205 @@
-"use client"; // Tambahkan "use client" jika Anda menggunakan hooks (useState) di file ini
+"use client";
 
 import React from "react";
 import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
   return (
+    // Mobile Layout:
     <footer className="bg-black text-white p-8 mt-12">
-      {/* Padding footer */}
+      {/* Logo Section */}
       <div className="flex flex-col justify center items-start lg:flex-row lg:items-center lg:hidden">
-        {/* Menambah space-y untuk memberi jarak antar elemen */}
-        {/* Gunakan Image dari Next.js */}
-        <Image
-          src="/logo-aircon-fix.png" // Path gambar logo
-          alt="Airlangga Convention 2.0 Logo"
-          width={150} // Tentukan lebar gambar
-          height={43} // Tentukan tinggi gambar // Menambah margin bawah logo agar tidak terlalu rapat
-        />
+        <Link href={"/"}>
+          {" "}
+          <Image
+            src="/logo-aircon-fix.png"
+            alt="Airlangga Convention 2.0 Logo"
+            width={150}
+            height={43}
+          />
+        </Link>
+        {/* About Us Section: */}
         <div className="flex flex-row gap-4 items-start justify-between w-full mb-11 mt-5">
-          {/* About Us Section */}
           <div>
-            <h2 className="font-bold mb-3">About Us</h2>{" "}
-            {/* Menambah margin bawah pada judul */}
+            <h2 className="font-bold mb-3">
+              <Link href="/about-us">About Us</Link>
+            </h2>{" "}
             <ul className="space-y-2">
-              <li>Airlangga Convention 2.0</li>
-              <li>Opening Party</li>
-              <li>Closing Party</li>
-              <li>Supporter</li>
-              <li>Sponsor & Media Partner</li>
+              <li>
+                <Link href={"/about-us"}>Airlangga Convention 2.0</Link>
+              </li>
+              <li>
+                <Link href={"/"} className="opacity-50">
+                  Opening Party
+                </Link>
+              </li>
+              <li>
+                <Link href={"/"} className="opacity-50">
+                  Closing Party
+                </Link>
+              </li>
+              <li>
+                <Link href={"/supporter"}>Supporter</Link>
+              </li>
+              <li>
+                <Link
+                  href={
+                    "https://drive.google.com/drive/folders/1Tf2h_VbgtYfKrqnOnBtJuRBYVnphlfzX?usp=drive_link"
+                  }
+                >
+                  Sponsor & Media Partner
+                </Link>
+              </li>
             </ul>
           </div>
-          {/* Competition Section */}
+          {/* Competition Section: */}
           <div className="">
-            <h2 className="font-bold mb-3">Competition</h2>{" "}
-            {/* Menambah margin bawah pada judul */}
+            <h2 className="font-bold mb-3">
+              {" "}
+              <Link href="/competitions">Competition</Link>
+            </h2>{" "}
             <ul className="space-y-2">
-              <li>Karya Tulis Ilmiah</li>
-              <li>Infografis</li>
-              <li>Try Out</li>
-              <li>Mobile Legends</li>
-              <li>Business Plan</li>
-              <li>Basket</li>
+              <li>
+                {" "}
+                <Link href="/competitions/karya-tulis-ilmiah">
+                  Karya Tulis Ilmiah
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="/competitions/infografis">Infografis</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="/competitions/try-out">Try Out</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="/competitions/mobile-legends">Mobile Legends</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="/competitions/business-plan">Business Plan</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="/competitions/basket">Basket</Link>
+              </li>
             </ul>
           </div>
-          {/* Contact Us Section */}
         </div>
+        {/* Contact Us Section: */}
         <div>
           <h2 className="font-bold mb-3">Contact Us</h2>{" "}
-          {/* Menambah margin bawah pada judul */}
-          <p className="flex items-center justify-center space-x-2">
+          <p className="flex items-center justify-start space-x-2 mb-3">
             <FaInstagram className="text-xl" />
-            <span>Instagram</span>
+            <span>
+              {" "}
+              <Link href="https://www.instagram.com/airlanggaconvention?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                Instagram{" "}
+              </Link>
+            </span>
+          </p>
+          <p className="flex items-center justify-start space-x-2">
+            <FaTiktok className="text-xl" />
+            <span>
+              {" "}
+              <Link href="https://www.tiktok.com/@airlanggaconvention?is_from_webapp=1&sender_device=pc">
+                TikTok{" "}
+              </Link>
+            </span>
           </p>
         </div>
-        {/* Divider */}
+        {/* Copyright Section: */}
         <div className="border-t border-white w-full mt-6"></div>{" "}
-        {/* Jarak lebih kecil antara divider dan konten */}
-        {/* Copyright / Footer Text */}
-        <p className="mt-4 text-center">&copy; Aircon2.0</p>{" "}
-        {/* Jarak yang lebih besar antara divider dan teks */}
+        <p className="mt-4 text-center opacity-70">&copy; Aircon 2.0</p>{" "}
       </div>
+      {/*  */}
+      {/* Desktop Layout: */}
       <div className="hidden lg:block w-full gap-3 mt-8 px-28">
         <div className="flex flex-row justify-between items-start gap-20">
+          {/* Logo Section: */}
           <div className="">
-            <Image
-              src="/logo-aircon-fix.png"
-              width={200}
-              height={200}
-              alt="logo"
-            ></Image>
+            <Link href={"/"}>
+              {" "}
+              <Image
+                src="/logo-aircon-fix.png"
+                width={200}
+                height={200}
+                alt="logo"
+              ></Image>
+            </Link>
           </div>
+          {/* About Us, Competitions, Contact Us, and Copyright Section: */}
           <div className="flex flex-col">
             <div className="flex flex-row justify-start item-start gap-16">
               <div className="text-xl">
-                <h1 className="text-xl mb-2 font-bold">About Us</h1>
+                <h1 className="text-xl mb-2 font-bold">
+                  {" "}
+                  <Link href="/about-us">About Us</Link>
+                </h1>
                 <Link href="/about-us">Airlangga Convention 2.0</Link>
               </div>
               <div className="text-xl">
-                <h1 className="text-xl mb-2 font-bold">Competition</h1>
+                <h1 className="text-xl mb-2 font-bold">
+                  <Link href="/competitions">Competition</Link>
+                </h1>
                 <div className="w-full flex flex-col justify-start items-start gap-3">
-                  <Link href="/about-us">Karya Tulis Ilmiah</Link>
-                  <Link href="/about-us">Infografis</Link>
-                  <Link href="/about-us">Try Out</Link>
-                  <Link href="/about-us">Business Plan</Link>
-                  <Link href="/about-us">Basket</Link>
+                  <Link href="/competitions/karya-tulis-ilmiah">
+                    Karya Tulis Ilmiah
+                  </Link>
+                  <Link href="/competitions/infografis">Infografis</Link>
+                  <Link href="/competitions/try-out">Try Out</Link>
+                  <Link href="/competitions/mobile-legends">
+                    Mobile Legends
+                  </Link>
+                  <Link href="/competitions/business-plan">Business Plan</Link>
+                  <Link href="/competitions/basket">Basket</Link>
                 </div>
               </div>
               <div className="text-xl">
                 <h1 className="text-xl mb-2 font-bold">Others</h1>
                 <div className="w-full flex flex-col justify-start items-start gap-3">
-                  <Link href="/about-us">Opening Party</Link>
-                  <Link href="/about-us">Closing Party</Link>
-                  <Link href="/about-us">Supporter</Link>
-                  <Link href="/about-us">Sponsor & Media Partner</Link>
+                  <Link href="/" className="opacity-50">
+                    Opening Party
+                  </Link>
+                  <Link href="/" className="opacity-50">
+                    Closing Party
+                  </Link>
+                  <Link href="/supporter">Supporter</Link>
+                  <Link href="https://drive.google.com/drive/folders/1Tf2h_VbgtYfKrqnOnBtJuRBYVnphlfzX?usp=drive_link">
+                    Sponsor & Media Partner
+                  </Link>
+                </div>
+              </div>
+              <div className="text-xl">
+                <h1 className="text-xl mb-2 font-bold">Contact Us</h1>
+                <div className="w-full flex flex-col justify-start items-start gap-3">
+                  <p className="flex items-center justify-start space-x-2">
+                    <FaInstagram className="text-xl" />
+                    <span>
+                      {" "}
+                      <Link href="https://www.instagram.com/airlanggaconvention?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        Instagram{" "}
+                      </Link>
+                    </span>
+                  </p>
+                  <p className="flex items-center justify-start space-x-2">
+                    <FaTiktok className="text-xl" />
+                    <span>
+                      {" "}
+                      <Link href="https://www.tiktok.com/@airlanggaconvention?is_from_webapp=1&sender_device=pc">
+                        TikTok{" "}
+                      </Link>
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
             <div className="w-full bg-white py-[0.015rem] mt-20"></div>
-            <p className="mt-4 text-start">&copy; Aircon2.0</p>{" "}
+            <p className="mt-4 text-start opacity-70">&copy; Aircon 2.0</p>{" "}
           </div>
         </div>
       </div>

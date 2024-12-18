@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarDots, GpsFix  } from "@phosphor-icons/react/dist/ssr";
+import { CalendarDots, GpsFix } from "@phosphor-icons/react/dist/ssr";
 
 const SupporterCard = ({
   school1,
@@ -33,17 +33,17 @@ const SupporterCard = ({
       </h1>
       <div className="w-full flex flex-row justify-between">
         <div>
-        <div className="flex justify-start items-center mb-4 gap-2">
-          <CalendarDots size={20} />
-          <span className="text-xs opacity-50">{date}</span>
+          <div className="flex justify-start items-center mb-4 gap-2">
+            <CalendarDots size={20} />
+            <span className="text-xs opacity-50">{date}</span>
+          </div>
+          <div className="flex justify-start items-center mb-2 gap-2">
+            <GpsFix size={20} />
+            <span className="text-xs opacity-50">{location}</span>
+          </div>
         </div>
-        <div className="flex justify-start items-center mb-4 gap-2">
-          <GpsFix size={20} />
-          <span className="text-xs opacity-50">{date}</span>
-        </div>
-        </div>
-        <div className="flex items-center justify-end mt-4">
-          <button className="bg-orange-500 text-white px-3 py-2 rounded-lg shadow-md font-extrabold text-sm">
+        <div className="flex items-center justify-end mt-3">
+          <button className="bg-orange-500 text-white px-3 py-2 rounded-lg shadow-md font-bold text-sm lg:px-5 lg:py-3">
             Buy Ticket
           </button>
         </div>

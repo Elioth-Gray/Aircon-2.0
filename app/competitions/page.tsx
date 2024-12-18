@@ -12,16 +12,26 @@ const Competition = () => {
     },
     {
       title: "Infografis",
-      price:
-        "Rp40.000,00 /orang (Gelombang 1)\n Rp50.000,00 /orang (Gelombang 2)",
+      price: (
+        <>
+          Rp40.000,00 /orang (Gelombang 1)
+          <br />
+          Rp50.000,00 /orang (Gelombang 2)
+        </>
+      ),
       imageSrc: "/Infografis.svg",
       bgColor: "#1F519A",
       route: "infografis",
     },
     {
       title: "Try Out & Tour",
-      price:
-        "Rp70.000,00 /orang (Gelombang 1)\n Rp85.000,00 /orang (Gelombang 2)\n Rp100.000,00 /orang (Gelombang 3)",
+      price: (
+        <>
+          Rp70.000,00 /orang (Gelombang 1) <br />
+          Rp85.000,00 /orang (Gelombang 2) <br />
+          Rp100.000,00 /orang (Gelombang 3)
+        </>
+      ),
       imageSrc: "/Tryout.svg",
       bgColor: "#1F519A",
       route: "try-out",
@@ -35,15 +45,25 @@ const Competition = () => {
     },
     {
       title: "Business Plan",
-      price:
-        "Rp50.000,00 /tim (Early Bid)\n Rp60.000,00 /tim (Batch 1)\n Rp75.000,00 /tim (Batch 2)",
+      price: (
+        <>
+          Rp50.000,00 /tim (Early Bid) <br />
+          Rp60.000,00 /tim (Batch 1) <br />
+          Rp75.000,00 /tim (Batch 2)
+        </>
+      ),
       imageSrc: "/Businessplan.svg",
       bgColor: "#0A3981",
       route: "business-plan",
     },
     {
       title: "Basket",
-      price: "Rp450.000,00 /tim (Putra)\nRp400.000,00 /tim (Putri)",
+      price: (
+        <>
+          Rp450.000,00 /tim (Putra) <br />
+          Rp400.000,00 /tim (Putri)
+        </>
+      ),
       imageSrc: "/Cerdascermat.svg",
       bgColor: "#0A3981",
       route: "basket",

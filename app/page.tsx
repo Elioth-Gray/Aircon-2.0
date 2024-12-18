@@ -23,33 +23,23 @@ const Home = () => {
       desc: "We provide a platform for high school students to explore interests and talents in both academic and non-academic competitions.",
       url: "/competitions",
     },
-    tenant: {
-      title: "register your tenant!",
-      desc: "Showcase your products to a large audience and boost your brand visibility. Limited booths available – register now!",
-      url: "/tenant",
-    },
     supporter: {
       title: "Support Your Team",
       desc: "Come on, support and enliven the stands! Get your spirit and voice ready for your school's pride team!",
       url: "/supporter",
-    },
-    performance: {
-      title: "Show Your Performance",
-      desc: "Prove that your dance team or band is the best!",
-      url: "/",
     },
   };
 
   return (
     <>
       <div className="w-full lg:hidden">
-        <Image
+        {/* <Image
           src="spiral-1.svg"
           width={200}
           height={200}
-          alt="competition"
-          className="absolute top-44 -right-6 -z-50"
-        />
+          alt="spiral-1"
+          className="absolute top-44 -right-6 -z-10"
+        /> */}
         <div className="mx-10 mt-3">
           <div className="flex flex-row gap-5 w-full mb-2">
             <div className="relative">
@@ -79,7 +69,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div className="mx-10 mt-5 flex flex-col gap-5">
           {/* About Us: */}
           <div className="flex flex-col gap-5">
@@ -107,7 +96,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
           {/* Competition:*/}
           <div className="w-full bg-[#D4ECF8] px-8 py-8 rounded-3xl flex flex-col justify-between">
             <div className="flex flex-col gap-2">
@@ -135,7 +123,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
           {/* Supporter:*/}
           <div className="w-full bg-[#E38F49] px-8 py-8 rounded-3xl flex flex-col justify-between">
             <div className="flex flex-col gap-2">
@@ -162,7 +149,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
           {/* Sponsor:*/}
           <div className="w-full bg-[#0A3981] p-4 px-8 py-8 rounded-3xl flex flex-row justify-between">
             <div className="flex flex-col gap-3">
